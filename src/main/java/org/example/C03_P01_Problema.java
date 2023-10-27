@@ -1,6 +1,6 @@
 package org.example;
 
-public class C01_P01_Problema {
+public class C03_P01_Problema {
 
     public static void main(String[] args) {
        /* Write a program in java to display the first 10 natural numbers.
