@@ -1,6 +1,6 @@
 package org.example;
-import java.lang.Math.*;
-public class C03_P06_Cercle_Perimeter_Area {
+
+public class C01_P06_Cercle_Perimeter_Area {
     public static void main(String[] args){
 
         /* Write a C program to compute the perimeter and area of a circle with a given radius.
@@ -12,7 +12,7 @@ Area of the Circle = 113.040001 square inches*/
          double radius = 12.0;
          double cercle_perimeter = 2 * pi * radius;
          double cercle_area = pi * Math.pow(radius, 2);
-         
+
          System.out.println(cercle_perimeter);
          System.out.println(cercle_area);
     }
