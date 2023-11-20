@@ -11,7 +11,7 @@ package org.example;
         1 Note(s) of 5.00
         0 Note(s) of 2.00
         0 Note(s) of 1.00*/
-public class C01_P15_Bank_Notes {
+public class C01_P16_Bank_Notes {
     public static void main(String[] args){
         int total_bank_notes, amount = 375;
 
