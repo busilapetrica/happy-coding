@@ -18,9 +18,13 @@ Multiplied! /Not multiplied!*/
         System.out.println("Enter second number:");
         int y = in.nextInt();
 
-            if(x>y){
-                x = x ^ y ^ (y = x);
-            }
+        if(x > y)
+        {
+            int temp;
+            temp = x; // Swap the values of 'x' and 'y'
+            x = y;
+            y = temp;
+        }
 
         if(y%x==0) {
             System.out.println("Multiplaied!");
