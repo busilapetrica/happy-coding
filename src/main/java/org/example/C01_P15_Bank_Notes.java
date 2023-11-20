@@ -43,7 +43,5 @@ public class C01_P15_Bank_Notes {
         System.out.println(total_bank_notes + " bank notes of 1");
         amount = amount -(total_bank_notes*1);
 
-
-
     }
 }
