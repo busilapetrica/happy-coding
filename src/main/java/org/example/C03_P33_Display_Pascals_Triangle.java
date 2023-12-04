@@ -12,11 +12,11 @@ Expected Output :
  */
 public class C03_P33_Display_Pascals_Triangle {
     public static void main(String[] args) {
-        int rows = 4;
+        int rows = 5;
         int count = 1;
 
-        for (int i = 0; i <= rows; i++) {
-            for (int j = 0; j <= rows - i; j++) {
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= rows - i; j++) {
                 System.out.print("  ");
             }
 
