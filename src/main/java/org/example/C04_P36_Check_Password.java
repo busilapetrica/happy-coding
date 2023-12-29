@@ -9,7 +9,6 @@ package org.example;
 import java.util.Scanner;
 public class C04_P36_Check_Password {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         int password = scanner.nextInt();
         if(password == 12345){
