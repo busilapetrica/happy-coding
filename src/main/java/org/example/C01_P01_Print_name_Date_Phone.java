@@ -1,5 +1,4 @@
 package org.example;
-
 public class C01_P01_Print_name_Date_Phone {
     public static void main(String[] args){
         /*Write a C program to print your name, date of birth, and mobile number.
@@ -12,6 +11,5 @@ Mobile : 99-9999999999*/
         String phonenumber = "99-9999999999";
 
         System.out.println("Name : " + name + "  Date Birth : " + dateBirth + " Phone number : " + phonenumber);
-
     }
 }
