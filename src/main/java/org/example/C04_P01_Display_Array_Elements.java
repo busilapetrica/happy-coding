@@ -12,13 +12,19 @@ package org.example;
  *******************************************************************************/
 public class C04_P01_Display_Array_Elements{
     public static void main(String[] args) {
-        int[] arr = new int[10];
-        arr[0] = 1;
-        for(int i=1; i<=9; i++){
-            arr[i] = i;
+        int[] array = new int[10];
+        int[] newArray =  addElementsToArray(array);
+        //display elements from array
+        for (int i : newArray) {
+            System.out.print(i + " ");
         }
-        for(int i=0; i<=9; i++){
-            System.out.print(arr[i] + " ");
-        }
+    }
+    public static int[] addElementsToArray(int[] array) {
+
+        array[0] = 1;
+    for (int i=1; i<=9; i++){
+        array[i] = i;
+    }
+    return array;
     }
 }
