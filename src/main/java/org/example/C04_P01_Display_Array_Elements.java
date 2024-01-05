@@ -1,6 +1,4 @@
 package org.example;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 /******************************************************************************
@@ -25,8 +23,7 @@ public class C04_P01_Display_Array_Elements {
             System.out.println("element - " + i + " : ");
             array[i] = in.nextInt();
         }
-
-        // Convert array to string
+        
         String result = addElementsToArray(array);
         System.out.println(result);
     }
