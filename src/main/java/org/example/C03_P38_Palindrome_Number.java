@@ -7,7 +7,17 @@ package org.example;
  *******************************************************************************/
 public class C03_P38_Palindrome_Number {
     public static void main (String[]args){
+
+        //input
         int number = 121;
+
+        //logica(algoritmica)
+        String message = isPalindrome(number);
+        //output
+        System.out.print(message);
+    }
+
+    public static String isPalindrome(int number) {
         int originalNumber = number;
         int reversedNumber = 0;
 
@@ -17,10 +27,12 @@ public class C03_P38_Palindrome_Number {
             number /= 10;
         }
 
+        String message;
         if (originalNumber == reversedNumber){
-            System.out.print ("The number  " + originalNumber + " is palindrome");
+            message = "The number " + originalNumber + " is palindrome";
         }else{
-            System.out.print ("The number " + originalNumber + " is not a palindrome");
+            message = "The number " + originalNumber + " is not a palindrome";
         }
+        return message;
     }
 }
