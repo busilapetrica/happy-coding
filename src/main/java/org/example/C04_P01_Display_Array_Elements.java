@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.Arrays;
 import java.util.Scanner;
+
 /******************************************************************************
  Write a program in java to store elements in an array and print them.
  Test Data :
@@ -26,13 +27,18 @@ public class C04_P01_Display_Array_Elements {
         }
 
         // Convert array to string
-        String result = Arrays.toString(addElementsToArray(array));
+        String result = addElementsToArray(array);
         System.out.println(result);
     }
 
-    public static int[] addElementsToArray(int[] array) {
-        int[] result = new int[array.length];
-        System.arraycopy(array, 0, result, 0, array.length);
-        return result;
+    public static String addElementsToArray(int[] array) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            stringBuilder.append(array[i]);
+            if (i < array.length - 1) {
+                stringBuilder.append(", ");
+            }
+        }
+        return stringBuilder.toString();
     }
 }
