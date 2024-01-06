@@ -1,4 +1,6 @@
 package org.example;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 /******************************************************************************
@@ -23,12 +25,12 @@ public class C04_P01_Display_Array_Elements {
             System.out.println("element - " + i + " : ");
             array[i] = in.nextInt();
         }
-        
-        String result = addElementsToArray(array);
+
+        String result = arrayToString(array);
         System.out.println(result);
     }
 
-    public static String addElementsToArray(int[] array) {
+    public static String arrayToString(int[] array) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < array.length; i++) {
             stringBuilder.append(array[i]);
