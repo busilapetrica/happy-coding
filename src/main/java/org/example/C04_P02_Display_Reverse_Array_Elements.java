@@ -29,10 +29,8 @@ public class C04_P02_Display_Reverse_Array_Elements {
         }
         String result = arrayToStringRevers(array);
         System.out.println(result);
-
     }
-
-    private static String arrayToStringRevers(int[] array) {
+    public static String arrayToStringRevers(int[] array) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = array.length; i > 0; i--) {
             stringBuilder.append(array[i - 1]);

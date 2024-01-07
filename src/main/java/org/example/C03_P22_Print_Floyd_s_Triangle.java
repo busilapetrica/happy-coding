@@ -1,6 +1,7 @@
 package org.example;
+
 /*
-Write a program in C to print Floyd's Triangle.
+Write a program in java to print Floyd's Triangle.
 1
 01
 101
@@ -8,18 +9,33 @@ Write a program in C to print Floyd's Triangle.
 10101
  */
 public class C03_P22_Print_Floyd_s_Triangle {
-    public static void main(String[] args){
-        int x=5, count=0;
-        for(int i=1; i<=x; i++){
-            for(int j=1; j<=i; j++) {
-                if(count==0){
-                    count++;
-                }else{
-                    count--;
-                }
-                System.out.print(count);
+    public static void main(String[] args) {
+        // Input
+        int height = 5;
+
+        // Algorithm
+        String floydTriangle = getFloydTriangle(height);
+
+        // Output
+        System.out.println(floydTriangle);
+    }
+
+    public static String getFloydTriangle(int height) {
+        StringBuilder result = new StringBuilder();
+        int count;
+
+        for (int i = 0; i < height; i++) {
+            count = (i + 1) % 2; // Start with 1 or 0 depending on the row index
+
+            for (int j = 0; j <= i; j++) {
+                result.append(count);
+                count = 1 - count; // Toggle between 1 and 0
             }
-            System.out.println();
+
+            if (i < height - 1) {
+                result.append("\n");
+            }
         }
+        return result.toString();
     }
 }
