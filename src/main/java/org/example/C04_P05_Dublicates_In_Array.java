@@ -25,7 +25,7 @@ public class C04_P05_Dublicates_In_Array {
             System.out.println("Element - " + i + " - :");
             array[i] = in.nextInt();
         }
-        
+
         int countDublicates = findDublicateInArray(array);
         System.out.print("Total number of dublicate elements found in the array: " + countDublicates);
     }
