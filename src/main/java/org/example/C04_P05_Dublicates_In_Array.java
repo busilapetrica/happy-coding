@@ -29,12 +29,16 @@ public class C04_P05_Dublicates_In_Array {
 
     public static int findDublicateInArray(int[] array) {
         int count = 0;
+         // Use a boolean array to keep track of which elements are already counted
+        boolean[] counted = new boolean[array.length];
         for (int i = 0; i < array.length; i++) {
-            //Using int j = i + 1 in the second for loop prevents self-comparison and avoids counting duplicates.
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[i] == array[j]) {
-                    count++;
-                    break; // to avoid counting the same duplicate multiple times.
+            if (!counted[i]) {
+                //Using int j = i + 1 in the second for loop prevents self-comparison and avoids counting duplicates.
+                for (int j = i + 1; j < array.length; j++) {
+                    if (array[i] == array[j]) {
+                        count++;
+                        counted[j] = true;
+                    }
                 }
             }
         }
