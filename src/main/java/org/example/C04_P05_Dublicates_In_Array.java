@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /******************************************************************************
@@ -19,26 +20,27 @@ public class C04_P05_Dublicates_In_Array {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] array = new int[n];
+
         for (int i = 0; i < n; i++) {
             System.out.println("Element - " + i + " - :");
             array[i] = in.nextInt();
         }
+        
         int countDublicates = findDublicateInArray(array);
         System.out.print("Total number of dublicate elements found in the array: " + countDublicates);
     }
 
     public static int findDublicateInArray(int[] array) {
         int count = 0;
-         // Use a boolean array to keep track of which elements are already counted
-        boolean[] counted = new boolean[array.length];
-        for (int i = 0; i < array.length; i++) {
-            if (!counted[i]) {
-                //Using int j = i + 1 in the second for loop prevents self-comparison and avoids counting duplicates.
-                for (int j = i + 1; j < array.length; j++) {
-                    if (array[i] == array[j]) {
-                        count++;
-                        counted[j] = true;
-                    }
+        // Sort the array in ascending order
+        Arrays.sort(array);
+
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] == array[i + 1]) {
+                count++;
+                // Skip over the remaining duplicates
+                while (i < array.length - 1 && array[i] == array[i + 1]) {
+                    i++;
                 }
             }
         }
