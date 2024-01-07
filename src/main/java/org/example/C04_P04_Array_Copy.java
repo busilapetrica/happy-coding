@@ -28,21 +28,23 @@ public class C04_P04_Array_Copy {
             array[i] = scanner.nextInt();
         }
 
-        StringBuilder result = copyToSecondArray(array);
+        String result = copyToSecondArray(array);
         System.out.println(result);
     }
-    public static StringBuilder copyToSecondArray(int[] array) {
+
+    public static String copyToSecondArray(int[] array) {
         //copy array to a new array
         int[] arrayCopy = new int[array.length];
-        for(int i=0; i<array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             arrayCopy[i] = array[i];
         }
-            //build a string with elements from new array and returned to print it in main function
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < arrayCopy.length; i++) {
-            result.append(arrayCopy[i]);
-            if (i < array.length - 1) {
-                result.append(", ");
+        //build a string with elements from new array and returned to print it in main function
+        String result = "";
+        for (int i = 0; i < array.length; i++) {
+            result += arrayCopy[i];
+
+            if (i < arrayCopy.length - 1) {
+                result += ", ";
             }
         }
         return result;
