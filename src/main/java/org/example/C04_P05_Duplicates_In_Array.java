@@ -14,7 +14,7 @@ import java.util.Scanner;
  Expected Output :
  Total number of duplicate elements found in the array is : 1
  *******************************************************************************/
-public class C04_P05_Dublicates_In_Array {
+public class C04_P05_Duplicates_In_Array {
     public static void main(String[] args) {
         System.out.println("number of elements : ");
         Scanner in = new Scanner(System.in);
@@ -26,11 +26,11 @@ public class C04_P05_Dublicates_In_Array {
             array[i] = in.nextInt();
         }
 
-        int countDublicates = findDublicateInArray(array);
+        int countDublicates = findDuplicateInArray(array);
         System.out.print("Total number of dublicate elements found in the array: " + countDublicates);
     }
 
-    public static int findDublicateInArray(int[] array) {
+    public static int findDuplicateInArray(int[] array) {
         int count = 0;
         // Sort the array in ascending order
         Arrays.sort(array);
