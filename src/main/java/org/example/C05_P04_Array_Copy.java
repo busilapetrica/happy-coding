@@ -16,7 +16,7 @@ import java.util.Scanner;
  The elements copied into the second array are :
  15 10 12
  *******************************************************************************/
-public class C04_P04_Array_Copy {
+public class C05_P04_Array_Copy {
     public static void main(String[] args) {
         System.out.println("Numbers of elements :");
         Scanner scanner = new Scanner(System.in);

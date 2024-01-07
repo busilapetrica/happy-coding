@@ -14,7 +14,7 @@ import java.util.Scanner;
  Sum of all elements stored in the array is : 15
  *******************************************************************************/
 
-public class C04_P03_Array_Sum {
+public class C05_P03_Array_Sum {
     public static void main(String[] args) {
         System.out.println("Elements of array: ");
         Scanner scanner = new Scanner(System.in);

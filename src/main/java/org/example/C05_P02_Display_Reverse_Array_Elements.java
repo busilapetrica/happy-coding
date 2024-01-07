@@ -16,7 +16,7 @@ import java.util.Scanner;
  The values store into the array in reverse are :
  7 5 2
  *******************************************************************************/
-public class C04_P02_Display_Reverse_Array_Elements {
+public class C05_P02_Display_Reverse_Array_Elements {
     public static void main(String[] args) {
         System.out.println("Number of elements:");
         Scanner in = new Scanner(System.in);

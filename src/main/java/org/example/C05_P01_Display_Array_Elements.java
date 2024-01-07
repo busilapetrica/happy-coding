@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /******************************************************************************
@@ -14,7 +13,7 @@ import java.util.Scanner;
  Expected Output :
  Elements in array are: 33 42 51
  *******************************************************************************/
-public class C04_P01_Display_Array_Elements {
+public class C05_P01_Display_Array_Elements {
     public static void main(String[] args) {
         System.out.println("Number of elements:");
         Scanner in = new Scanner(System.in);
