@@ -4,6 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/******************************************************************************
+ Input the number of elements to be stored in the array: 4
+ Input 4 elements in the array :
+ element - 0 : 3
+ element - 1 : 2
+ element - 2 : 2
+ element - 3 : 5
+ Expected Output :
+ The unique elements found in the array are:
+ 3 5
+ *****************************************************************************/
 public class C05_P06_Print_Elements_Unique_In_Array {
     public static void main(String[] args) {
         System.out.println("Number of elements :");
