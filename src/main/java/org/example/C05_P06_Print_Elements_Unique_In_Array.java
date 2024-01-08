@@ -1,0 +1,56 @@
+package org.example;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class C05_P06_Print_Elements_Unique_In_Array {
+    public static void main(String[] args) {
+        System.out.println("Number of elements :");
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
+        int[] array = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("Element - " + i + " - :");
+            array[i] = scanner.nextInt();
+        }
+        String result = String.valueOf(uniqueElementsFromArray(array));
+        System.out.println(result);
+    }
+
+    public static String uniqueElementsFromArray(int[] array) {
+        String result = "";
+        List<Integer> uniqueList = new ArrayList<>();
+
+        for (int i = 0; i < array.length; i++) {
+            boolean isUnique = true;
+            for (int j = 0; j < array.length; j++) {
+                if (i != j && array[i] == array[j]) {
+                    isUnique = false;
+                    break;
+                }
+            }
+            if (isUnique) {
+                uniqueList.add(array[i]);
+            }
+        }
+
+        // Convert the List to an array
+        int[] uniqueArray = new int[uniqueList.size()];
+        for (int i = 0; i < uniqueList.size(); i++) {
+            uniqueArray[i] = uniqueList.get(i);
+        }
+
+        // Build the result string
+        for (int i = 0; i < uniqueArray.length; i++) {
+            result += uniqueArray[i];
+            if (i < uniqueArray.length - 1) {
+                result += ", ";
+            }
+        }
+
+        return result;
+    }
+
+}
