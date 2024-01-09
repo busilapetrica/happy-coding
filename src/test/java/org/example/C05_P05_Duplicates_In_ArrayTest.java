@@ -8,6 +8,9 @@ class C05_P05_Duplicates_In_ArrayTest {
     @Test
     public void findOneDuplicatesInArray() {
         int[] array = {1, 1, 5, 3}; // Initial array
+
+
+
         // Call logic
         int result = C05_P05_Duplicates_In_Array.findDuplicateInArray(array);
         // Assert result

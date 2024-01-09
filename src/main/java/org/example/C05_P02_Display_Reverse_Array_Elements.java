@@ -17,20 +17,8 @@ import java.util.Scanner;
  7 5 2
  *******************************************************************************/
 public class C05_P02_Display_Reverse_Array_Elements {
-    public static void main(String[] args) {
-        System.out.println("Number of elements:");
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int[] array = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            System.out.print("Element - " + i + " - : ");
-            array[i] = in.nextInt();
-        }
-        String result = arrayToStringRevers(array);
-        System.out.println(result);
-    }
-    public static String arrayToStringRevers(int[] array) {
+    public static int[] arrayToStringRevers(int[] array) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = array.length; i > 0; i--) {
             stringBuilder.append(array[i - 1]);
@@ -38,6 +26,7 @@ public class C05_P02_Display_Reverse_Array_Elements {
                 stringBuilder.append(", ");
             }
         }
-        return stringBuilder.toString();
+        //return stringBuilder.toString();
+        return null;
     }
 }

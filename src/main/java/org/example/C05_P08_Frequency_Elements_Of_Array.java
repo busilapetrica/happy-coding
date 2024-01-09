@@ -1,6 +1,6 @@
 package org.example;
 
-import java.util.Scanner;
+import org.jetbrains.annotations.NotNull;
 
 /******************************************************
  Write a program in java to count the frequency of each element of an array.
@@ -17,33 +17,52 @@ import java.util.Scanner;
  43 occurs 1 times
  *******************************************************/
 public class C05_P08_Frequency_Elements_Of_Array {
-    public static void main(String[] args) {
-        System.out.println("Number elements:");
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int[] array = new int[n];
-        for (int i = 0; i < n; i++) {
-            System.out.println("Element - " + i + " - :");
-            array[i] = scanner.nextInt();
-        }
-        String result = findFrequencyElements(array);
-        System.out.println(result);
-    }
 
-    public static String findFrequencyElements(int[] array) {
-        String result = "";
-
-        for (int i = 0; i < array.length; i++) {
-            int count = 0;
-            for (int j = 0; j < array.length; j++) {
-                if (array[i] == array[j]) {
-                    count++;
+    public static int[] countFrequency(int[] array) {
+        int[] result = new int[array.length];
+        if (array.length == 1) {
+            result[0] = 1;
+        } else if (array.length >= 2) {
+            int[] counts = new int[array.length];
+            counts[0] = 1;
+            for (int i = 1; i < array.length; i++) {
+                if (array[0] == array[i]) {
+                    counts[0]++;
+                } else {
+                    counts[i]++;
                 }
             }
-            if (!result.contains(array[i] + " occurs " + count + " times")) {
-                result += array[i] + " occurs " + count + " times\n";
+            int numberOfZeros = countZeros(counts);
+            int[] countsWithoutZeros = getCountsWithoutZeros(counts, numberOfZeros);
+
+            if (countsWithoutZeros.length == 1) {
+                result = new int[]{countsWithoutZeros[0]};
+            } else {
+                result = countsWithoutZeros;
             }
         }
         return result;
+    }
+
+    private static int[] getCountsWithoutZeros(int[] counts, int numberOfZeros) {
+        int[] countsWithoutZeros = new int[counts.length - numberOfZeros];
+        int j = 0;
+        for (int i = 0; i < counts.length; i++) {
+            if (counts[i] != 0) {
+                countsWithoutZeros[j] = counts[i];
+                j++;
+            }
+        }
+        return countsWithoutZeros;
+    }
+
+    private static int countZeros(int[] counts) {
+        int numberOfZeros = 0;
+        for (int i = 0; i < counts.length; i++) {
+            if (counts[i] == 0) {
+                numberOfZeros++;
+            }
+        }
+        return numberOfZeros;
     }
 }

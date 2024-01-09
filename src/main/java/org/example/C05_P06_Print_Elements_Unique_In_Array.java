@@ -16,21 +16,8 @@ import java.util.Scanner;
  3 5
  *****************************************************************************/
 public class C05_P06_Print_Elements_Unique_In_Array {
-    public static void main(String[] args) {
-        System.out.println("Number of elements :");
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
 
-        int[] array = new int[n];
-        for (int i = 0; i < n; i++) {
-            System.out.println("Element - " + i + " - :");
-            array[i] = scanner.nextInt();
-        }
-        String result = String.valueOf(uniqueElementsFromArray(array));
-        System.out.println(result);
-    }
-
-    public static String uniqueElementsFromArray(int[] array) {
+    public static int[] uniqueElementsFromArray(int[] array) {
         String result = "";
         List<Integer> uniqueList = new ArrayList<>();
 
@@ -61,7 +48,7 @@ public class C05_P06_Print_Elements_Unique_In_Array {
             }
         }
 
-        return result;
+        return null;
     }
 
 }

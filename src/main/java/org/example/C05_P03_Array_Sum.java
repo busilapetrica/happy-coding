@@ -15,20 +15,7 @@ import java.util.Scanner;
  *******************************************************************************/
 
 public class C05_P03_Array_Sum {
-    public static void main(String[] args) {
-        System.out.println("Elements of array: ");
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
 
-        int[] array = new int[n];
-        for (int i = 0; i < n; i++) {
-            System.out.println("Element - " + i + " - : ");
-            array[i] = scanner.nextInt();
-        }
-
-        int result = calculateArraySum(array);
-        System.out.println(result);
-    }
     public static int calculateArraySum(int[] array) {
         int arraySum = 0;
         for (int i = 0; i < array.length; i++) {

@@ -17,22 +17,9 @@ import java.util.Scanner;
  15 10 12
  *******************************************************************************/
 public class C05_P04_Array_Copy {
-    public static void main(String[] args) {
-        System.out.println("Numbers of elements :");
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
 
-        int[] array = new int[n];
-        for (int i = 0; i < n; i++) {
-            System.out.println("Element - " + i + " - :");
-            array[i] = scanner.nextInt();
-        }
 
-        String result = copyToSecondArray(array);
-        System.out.println(result);
-    }
-
-    public static String copyToSecondArray(int[] array) {
+    public static int[] copyToSecondArray(int[] array) {
         //copy array to a new array
         int[] arrayCopy = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -47,7 +34,7 @@ public class C05_P04_Array_Copy {
                 result += ", ";
             }
         }
-        return result;
+        return null;
     }
 }
 

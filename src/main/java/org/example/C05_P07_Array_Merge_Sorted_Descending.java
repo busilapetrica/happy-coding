@@ -20,27 +20,9 @@ import java.util.Collections;
  3, 3, 2, 2, 1, 1
  *****************************************************/
 class C05_P07_Array_Merge_Sorted_Descending {
-    public static void main(String[] args) {
-        System.out.println("Number of elements : ");
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
 
-        int[] array1 = new int[n];
-        for (int i = 0; i < n; i++) {
-            System.out.println("Enter element - " + i + " - of array 1:");
-            array1[i] = scanner.nextInt();
-        }
 
-        int[] array2 = new int[n];
-        for (int i = 0; i < n; i++) {
-            System.out.println("Enter element - " + i + " - of array 2:");
-            array2[i] = scanner.nextInt();
-        }
-        String result = mergeArraysAndSorting(array1, array2);
-        System.out.println(result);
-    }
-
-    public static String mergeArraysAndSorting(int[] array1, int[] array2) {
+    public static int[] mergeArraysAndSorting(int[] array1, int[] array2) {
         int arraysLength = array1.length + array2.length;
         int[] arrayMerge = new int[arraysLength];
 
@@ -53,12 +35,12 @@ class C05_P07_Array_Merge_Sorted_Descending {
         for (int i = 0; i < array2.length; i++) {
             arrayMerge[array1.length + i] = array2[i];
         }
-        String result = makeReverseStringFromArray(arrayMerge);
+        int[] result = makeReverseStringFromArray(arrayMerge);
 
         return result;
     }
 
-    public static String makeReverseStringFromArray(int[] array){
+    public static int[] makeReverseStringFromArray(int[] array){
         Arrays.sort(array);
         String reverseString = "";
 // Build the result reverse string
@@ -68,6 +50,6 @@ class C05_P07_Array_Merge_Sorted_Descending {
                 reverseString += ", ";
             }
         }
-        return reverseString;
+        return null;
     }
 }
