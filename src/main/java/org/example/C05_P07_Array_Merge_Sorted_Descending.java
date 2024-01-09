@@ -53,12 +53,12 @@ Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < array2.length; i++) {
             arrayMerge[array1.length + i] = array2[i];
         }
-     String result = makeStringFromArray(arrayMerge);
+     String result = makeReverseStringFromArray(arrayMerge);
      
      return result;
     }
     
-    public static String makeStringFromArray(int[] arrayMerge){
+    public static String makeReverseStringFromArray(int[] arrayMerge){
         Arrays.sort(arrayMerge);
          String reverseString = "";
 // Build the result reverse string 
