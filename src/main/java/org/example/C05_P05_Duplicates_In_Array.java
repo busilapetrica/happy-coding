@@ -1,8 +1,6 @@
 package org.example;
 
 import java.util.Arrays;
-import java.util.Scanner;
-
 /******************************************************************************
  Write a program in java to count the total number of duplicate elements in an array.
  Test Data :
