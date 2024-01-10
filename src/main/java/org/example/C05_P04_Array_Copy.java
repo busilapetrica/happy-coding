@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Scanner;
-
 /******************************************************************************
  Write a program in java to copy the elements of one array into another array.
  Test Data :
@@ -17,7 +15,6 @@ import java.util.Scanner;
  15 10 12
  *******************************************************************************/
 public class C05_P04_Array_Copy {
-
 
     public static int[] copyToSecondArray(int[] array) {
         //copy array to a new array
