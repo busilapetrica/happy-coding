@@ -22,16 +22,7 @@ public class C05_P04_Array_Copy {
         for (int i = 0; i < array.length; i++) {
             arrayCopy[i] = array[i];
         }
-        //build a string with elements from new array and returned to print it in main function
-        String result = "";
-        for (int i = 0; i < array.length; i++) {
-            result += arrayCopy[i];
-
-            if (i < arrayCopy.length - 1) {
-                result += ", ";
-            }
-        }
-        return null;
+        return arrayCopy;
     }
 }
 

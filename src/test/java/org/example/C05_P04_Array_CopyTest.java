@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 class C05_P04_Array_CopyTest {
     @Test
     public void copyNumbersToCommaSeparatedList() {
@@ -12,7 +14,8 @@ class C05_P04_Array_CopyTest {
         // Call logic
         int[] result = C05_P04_Array_Copy.copyToSecondArray(array);
         // Assert result
-        assertEquals("1, 1, 5, 3, 4, 5, 6, 7, 8, 9", result);
+        assertEquals("[1, 1, 5, 3, 4, 5, 6, 7, 8, 9]", Arrays.toString(result));
+
     }
 
     @Test
@@ -20,7 +23,7 @@ class C05_P04_Array_CopyTest {
         int[] array = {33, 42, 51}; // Initial array
         int[] result = C05_P04_Array_Copy.copyToSecondArray(array);
         // Assert result
-        assertEquals("33, 42, 51", result);
+        assertEquals("[33, 42, 51]", Arrays.toString(result));
     }
 
     @Test
@@ -28,7 +31,7 @@ class C05_P04_Array_CopyTest {
         int[] array = {3, 4}; // Initial array
         int[] result = C05_P04_Array_Copy.copyToSecondArray(array);
         // Assert result
-        assertEquals("3, 4", result);
+        assertEquals("[3, 4]", Arrays.toString(result));
     }
 
 
