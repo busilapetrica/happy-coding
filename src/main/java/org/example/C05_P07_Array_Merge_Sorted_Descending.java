@@ -1,7 +1,7 @@
 package org.example;
+
 import java.util.Arrays;
-import java.util.Scanner;
-import java.util.Collections;
+
 /*****************************************************
  Write a program in C to merge two arrays of the same size sorted in descending order.
  Test Data :
@@ -21,7 +21,6 @@ import java.util.Collections;
  *****************************************************/
 class C05_P07_Array_Merge_Sorted_Descending {
 
-
     public static int[] mergeArraysAndSorting(int[] array1, int[] array2) {
         int arraysLength = array1.length + array2.length;
         int[] arrayMerge = new int[arraysLength];
@@ -35,21 +34,17 @@ class C05_P07_Array_Merge_Sorted_Descending {
         for (int i = 0; i < array2.length; i++) {
             arrayMerge[array1.length + i] = array2[i];
         }
-        int[] result = makeReverseStringFromArray(arrayMerge);
 
-        return result;
+        return makeReverseStringFromArray(arrayMerge);
     }
 
-    public static int[] makeReverseStringFromArray(int[] array){
+    public static int[] makeReverseStringFromArray(int[] array) {
         Arrays.sort(array);
-        String reverseString = "";
-// Build the result reverse string
+        int[] reverseArray = new int[array.length];
+// Build the result reverse array
         for (int i = array.length - 1; i >= 0; i--) {
-            reverseString += array[i];
-            if (i > 0) {
-                reverseString += ", ";
-            }
+            reverseArray[array.length - 1 - i] = array[i];
         }
-        return null;
+        return reverseArray;
     }
 }
