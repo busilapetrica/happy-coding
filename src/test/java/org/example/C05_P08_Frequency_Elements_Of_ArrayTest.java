@@ -1,5 +1,6 @@
-package org.example;
 /*
+package org.example;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
