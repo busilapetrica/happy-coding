@@ -99,7 +99,7 @@ class C05_P08_Frequency_Elements_Of_ArrayTest {
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
         assertEquals(Arrays.toString(new int[]{1,2}), Arrays.toString(result));
-    }*/
+    }
 
 
-}
+}*/
