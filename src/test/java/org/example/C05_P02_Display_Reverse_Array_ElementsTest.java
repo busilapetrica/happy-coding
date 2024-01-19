@@ -21,7 +21,7 @@ import org.junit.jupiter.api.Test;
             int[] array = {33, 42, 51}; // Initial array
             int[] result = C05_P02_Display_Reverse_Array_Elements.arrayToStringRevers(array);
             // Assert result
-            assertEquals("51, 42, 33", result);
+            assertEquals(new int[]{51, 42, 33}, result);
         }
 
         @Test
@@ -29,9 +29,7 @@ import org.junit.jupiter.api.Test;
             int[] array = {3, 4}; // Initial array
             int[] result = C05_P02_Display_Reverse_Array_Elements.arrayToStringRevers(array);
             // Assert result
-            assertEquals("4, 3", result);
+            assertEquals(new int[]{4, 3}, result);
         }
-
-
     }
 
