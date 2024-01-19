@@ -17,38 +17,52 @@ import java.util.Scanner;
  *****************************************************************************/
 public class C05_P06_Print_Elements_Unique_In_Array {
 
-    public static int[] uniqueElementsFromArray(int[] array) {
-        String result = "";
-        List<Integer> uniqueList = new ArrayList<>();
+ public static int[] uniqueElementsFromArray(int[] array) {
+        int count = 0;
 
+        // Count the number of unique elements
         for (int i = 0; i < array.length; i++) {
             boolean isUnique = true;
-            for (int j = 0; j < array.length; j++) {
-                if (i != j && array[i] == array[j]) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
                     isUnique = false;
                     break;
                 }
             }
             if (isUnique) {
-                uniqueList.add(array[i]);
+                count++;
             }
         }
 
-        // Convert the List to an array
-        int[] uniqueArray = new int[uniqueList.size()];
-        for (int i = 0; i < uniqueList.size(); i++) {
-            uniqueArray[i] = uniqueList.get(i);
-        }
+        // Create a new array to store unique elements
+        int[] newArray = new int[count];
+        count = 0;
 
-        // Build the result string
-        for (int i = 0; i < uniqueArray.length; i++) {
-            result += uniqueArray[i];
-            if (i < uniqueArray.length - 1) {
-                result += ", ";
+        // Populate the new array with unique elements
+        for (int i = 0; i < array.length; i++) {
+            boolean isUnique = true;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    isUnique = false;
+                    break;
+                }
+            }
+            if (isUnique) {
+                newArray[count++] = array[i];
+            }
+
+            // Skip duplicates
+            while (i < array.length - 1 && array[i] == array[i + 1]) {
+                i++;
             }
         }
 
-        return null;
+   // Resize the array to the actual count of unique elements
+        int[] resizedArray = new int[count];
+        for (int i = 0; i < count; i++) {
+            resizedArray[i] = newArray[i];
+        }
+
+        return resizedArray;
     }
-
 }
