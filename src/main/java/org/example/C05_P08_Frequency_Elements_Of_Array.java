@@ -1,4 +1,4 @@
-package org.example;
+/* package org.example;
 /******************************************************
  Write a program in java to count the frequency of each element of an array.
  Test Data :
@@ -12,7 +12,7 @@ package org.example;
  25 occurs 1 times
  12 occurs 1 times
  43 occurs 1 times
- *******************************************************/
+
 public class C05_P08_Frequency_Elements_Of_Array {
 
     public static int[] countFrequency(int[] array) {
@@ -63,3 +63,5 @@ public class C05_P08_Frequency_Elements_Of_Array {
         return numberOfZeros;
     }
 }
+
+*/
