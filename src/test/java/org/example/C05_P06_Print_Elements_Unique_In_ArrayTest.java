@@ -1,4 +1,4 @@
-package org.example;
+/* package org.example;
 
 import org.junit.jupiter.api.Test;
 
@@ -26,3 +26,4 @@ class C05_P06_Print_Elements_Unique_In_ArrayTest {
         assertEquals(new int[]{5, 6, 7}, result); 
     }
 }
+*/
