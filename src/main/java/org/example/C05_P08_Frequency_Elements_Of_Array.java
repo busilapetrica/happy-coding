@@ -1,7 +1,4 @@
 package org.example;
-
-import org.jetbrains.annotations.NotNull;
-
 /******************************************************
  Write a program in java to count the frequency of each element of an array.
  Test Data :
