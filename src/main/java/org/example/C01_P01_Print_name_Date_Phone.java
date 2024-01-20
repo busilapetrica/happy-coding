@@ -9,7 +9,7 @@ package org.example;
  *******************************************/
 public class C01_P01_Print_name_Date_Phone {
     public static String printDates(String name, String dateBirth, String phonenumber){
-        return "Name : " + name + "  Date Birth : " + dateBirth + " Phone number : " + phonenumber;
+        return name + ", " + dateBirth + ", " + phonenumber;
     }
 
 }
