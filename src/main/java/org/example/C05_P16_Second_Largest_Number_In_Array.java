@@ -1,11 +1,6 @@
 package org.example;
 
 public class C05_P16_Second_Largest_Number_In_Array {
-    public static void main(String[] args) {
-        int[] myNum = {5, 2, 5, 5, 7};
-        int result = findSecondLargestElement(myNum);
-        System.out.print(result);
-    }
     public static int findSecondLargestElement(int[] array) {
 
         if (array.length == 2) {
