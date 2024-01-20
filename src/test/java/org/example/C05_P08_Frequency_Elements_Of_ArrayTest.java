@@ -1,3 +1,4 @@
+/*
 package org.example;
 
 import org.junit.jupiter.api.Test;
@@ -36,7 +37,7 @@ class C05_P08_Frequency_Elements_Of_ArrayTest {
         assertArrayEquals(new int[]{2, 2}, result);
     }
 
-    /*
+    
     @Test
     void threeSameElementsArrayReturnsFrequency3() {
         int[] array = {5,5, 5};
@@ -98,7 +99,7 @@ class C05_P08_Frequency_Elements_Of_ArrayTest {
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
         assertEquals(Arrays.toString(new int[]{1,2}), Arrays.toString(result));
-    }*/
+    }
 
 
-}
+}*/

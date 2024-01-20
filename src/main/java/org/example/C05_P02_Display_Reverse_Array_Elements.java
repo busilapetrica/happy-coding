@@ -19,14 +19,11 @@ import java.util.Scanner;
 public class C05_P02_Display_Reverse_Array_Elements {
 
     public static int[] arrayToStringRevers(int[] array) {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = array.length; i > 0; i--) {
-            stringBuilder.append(array[i - 1]);
-            if (i > 1) {
-                stringBuilder.append(", ");
-            }
+        int[] reverseArray = new int[array.length];
+        int count= 0;
+        for (int i = array.length - 1; i >= 0; i--) {
+            reverseArray[count++] = array[i];
         }
-        //return stringBuilder.toString();
-        return null;
+        return reverseArray;
     }
 }
