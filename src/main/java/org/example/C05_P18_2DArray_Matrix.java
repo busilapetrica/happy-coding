@@ -1,4 +1,5 @@
 package org.example;
+
 /***************************************
  18. Write a program in java for a 2D array of size 3x3 and print the matrix.
  Test Data :
@@ -22,23 +23,43 @@ package org.example;
  7 8 9
  ********************************************/
 public class C05_P18_2DArray_Matrix {
-    public static String patern2DMatrix(int[] array1, int[] array2, int[] array3) {
-        String result = "";
-
-        for (int i = 0; i < array1.length; i++) {
-            result += array1[i] + " ";
+    public static int[][] pattern2DMatrix(int[] array1, int[] array2, int[] array3) {
+        int count = 0;
+        if (array1.length > count) {
+            count = array1.length;
         }
-        result += "\n";
-
-        for (int i = 0; i < array2.length; i++) {
-            result += array2[i] + " ";
+        if (array2.length > count) {
+            count = array2.length;
         }
-        result += "\n";
-
-        for (int i = 0; i < array3.length; i++) {
-            result += array3[i] + " ";
+        if (array3.length > count) {
+            count = array3.length;
         }
 
-        return result;
+        int[][] resultArray = new int[3][count];
+
+        for (int j = 0; j < count; j++) {
+            if (j < array1.length) {
+                resultArray[0][j] = array1[j];
+            } else {
+                resultArray[0][j] = 0;
+            }
+        }
+
+        for (int j = 0; j < count; j++) {
+            if (j < array2.length) {
+                resultArray[1][j] = array2[j];
+            } else {
+                resultArray[1][j] = 0;
+            }
+        }
+
+        for (int j = 0; j < count; j++) {
+            if (j < array3.length) { // Fixed typo: changed array2.length to array3.length
+                resultArray[2][j] = array3[j];
+            } else {
+                resultArray[2][j] = 0;
+            }
+        }
+        return resultArray;
     }
 }
