@@ -54,7 +54,7 @@ public class C05_P18_2DArray_Matrix {
         }
 
         for (int j = 0; j < count; j++) {
-            if (j < array3.length) { // Fixed typo: changed array2.length to array3.length
+            if (j < array3.length) {
                 resultArray[2][j] = array3[j];
             } else {
                 resultArray[2][j] = 0;
