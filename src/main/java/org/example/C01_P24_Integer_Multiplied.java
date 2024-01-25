@@ -1,36 +1,28 @@
 package org.example;
-
 import java.util.Scanner;
-
-public class C01_P24_Integer_Multiplied {
-    /*Write a java program that reads two integers and checks whether they are multiplied or not.
+/*************************************************
+Write a java program that reads two integers and checks whether they are multiplied or not.
 Test Data :
 Input the first number: 5
 Input the second number: 15
 Expected Output:
-Multiplied! /Not multiplied!*/
-
-    public static void main(String[] args){
-
-        Scanner in = new Scanner(System.in);
-        System.out.println("enter fist number:");
-        int x = in.nextInt();
-        System.out.println("Enter second number:");
-        int y = in.nextInt();
-
-        if(x > y)
+Multiplied! /Not multiplied!
+ *************************************************/
+public class C01_P24_Integer_Multiplied {
+    static String checkMultipliedInt(int number1, int number2) {
+        String result ="";
+        if(number1 > number2)
         {
             int temp;
-            temp = x; // Swap the values of 'x' and 'y'
-            x = y;
-            y = temp;
+            temp = number1;
+            number1 = number2;
+            number2 = temp;
         }
-
-        if(y%x==0) {
-            System.out.println("Multiplaied!");
+        if(number2 % number1 ==0) {
+            result = "Multiplied!";
         }else{
-            System.out.println("Not Multiplaied!");
+            result = "Not Multiplied!";
         }
+        return result;
     }
-
 }
