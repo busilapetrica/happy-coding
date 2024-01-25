@@ -41,7 +41,7 @@ public static int[][] pattern2DMatrix(int[]... arrays) {
             if (j < arrays[i].length) {
                 resultArray[i][j] = arrays[i][j];
             } else {
-                resultArray[i][j] = 1;
+                resultArray[i][j] = 0;
             }
         }
     }
