@@ -1,3 +1,4 @@
+package org.example;
 /**********************************************************************
 Write a program in java to find the transpose of a given matrix.
 Test Data :
@@ -16,7 +17,7 @@ The transpose of a matrix is :
 1 3
 2 4
 ***********************************************************/
-public class Main {
+public class C05_P22_Transpose_Matrix {
     public static void main(String[] args) {
         int[][] array = {{1, 2}, {4, 5, 6}};
 

@@ -1,4 +1,4 @@
-
+package org.example;
 
 /******************************************************************************
 19. Write a program in java for adding two matrices of the same size.
