@@ -1,5 +1,7 @@
 package org.example;
-/*Write a java program to read an amount (integer value) and break the amount into the smallest possible number of bank notes.
+/**********************************************************
+Write a java program to read an amount (integer value) and break the amount into
+ the smallest possible number of bank notes.
         Test Data :
         Input the amount: 375
         Expected Output:
@@ -10,38 +12,46 @@ package org.example;
         0 Note(s) of 10.00
         1 Note(s) of 5.00
         0 Note(s) of 2.00
-        0 Note(s) of 1.00*/
+        0 Note(s) of 1.00
+ ***************************************************************/
 public class C01_P16_Bank_Notes {
-    public static void main(String[] args){
-        int total_bank_notes, amount = 375;
+    public static String bankNotes(int amount) {
+        int total_bank_notes;
+        total_bank_notes = amount /100;
+        String result = "";
 
-        total_bank_notes = amount/100;
-        System.out.println(total_bank_notes + " bank notes of 100");
+        result += printBankNotes(total_bank_notes , 100);
         amount = amount - (total_bank_notes*100);
 
-        total_bank_notes = amount/50 ;
-        System.out.println(total_bank_notes + " bank notes of 50");
+        total_bank_notes = amount /50 ;
+        result += printBankNotes(total_bank_notes , 50);
         amount = amount -(total_bank_notes*50);
 
-        total_bank_notes = amount/20;
-        System.out.println(total_bank_notes + " bank notes of 20");
+        total_bank_notes = amount /20;
+        result += printBankNotes(total_bank_notes , 20);
         amount = amount -(total_bank_notes*20);
 
-        total_bank_notes = amount/10;
-        System.out.println(total_bank_notes + " bank notes of 10");
+        total_bank_notes = amount /10;
+        result += printBankNotes(total_bank_notes , 10);
         amount = amount -(total_bank_notes*10);
 
-        total_bank_notes = amount/5;
-        System.out.println(total_bank_notes + " bank notes of 5");
+        total_bank_notes = amount /5;
+        result += printBankNotes(total_bank_notes , 5);
         amount = amount -(total_bank_notes*5);
 
-        total_bank_notes = amount/2;
-        System.out.println(total_bank_notes + " bank notes of 2");
+        total_bank_notes = amount /2;
+        result += printBankNotes(total_bank_notes , 2);
         amount = amount -(total_bank_notes*2);
 
-        total_bank_notes = amount/1;
-        System.out.println(total_bank_notes + " bank notes of 1");
+        total_bank_notes = amount /1;
+        result += printBankNotes(total_bank_notes , 1);
         amount = amount -(total_bank_notes*1);
+        return result;
+    }
 
+    public static String printBankNotes(int totalBankNotes, int bankNotes){
+        String result = "";
+        result = totalBankNotes + " bank notes of " + bankNotes + "\n";
+        return result;
     }
 }
