@@ -23,43 +23,28 @@ package org.example;
  7 8 9
  ********************************************/
 public class C05_P18_2DArray_Matrix {
-    public static int[][] pattern2DMatrix(int[] array1, int[] array2, int[] array3) {
-        int count = 0;
-        if (array1.length > count) {
-            count = array1.length;
+public static int[][] pattern2DMatrix(int[]... arrays) {
+        //count maximum lenght of arrays
+    int count = 0;
+    for (int i = 0; i < arrays.length; i++) {
+    int[] array = arrays[i];
+        if (array.length > count) {
+            count = array.length;
         }
-        if (array2.length > count) {
-            count = array2.length;
-        }
-        if (array3.length > count) {
-            count = array3.length;
-        }
-
-        int[][] resultArray = new int[3][count];
-
-        for (int j = 0; j < count; j++) {
-            if (j < array1.length) {
-                resultArray[0][j] = array1[j];
-            } else {
-                resultArray[0][j] = 0;
-            }
-        }
-
-        for (int j = 0; j < count; j++) {
-            if (j < array2.length) {
-                resultArray[1][j] = array2[j];
-            } else {
-                resultArray[1][j] = 0;
-            }
-        }
-
-        for (int j = 0; j < count; j++) {
-            if (j < array3.length) {
-                resultArray[2][j] = array3[j];
-            } else {
-                resultArray[2][j] = 0;
-            }
-        }
-        return resultArray;
     }
+    //create a 2D matrix 
+    int[][] resultArray = new int[arrays.length][count];
+    //add elements to matrix
+    // if the length of one array is to small  add "0"   
+    for (int i = 0; i < arrays.length; i++) {
+        for (int j = 0; j < count; j++) {
+            if (j < arrays[i].length) {
+                resultArray[i][j] = arrays[i][j];
+            } else {
+                resultArray[i][j] = 1;
+            }
+        }
+    }
+    return resultArray;
+}
 }
