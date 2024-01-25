@@ -18,21 +18,6 @@ The transpose of a matrix is :
 2 4
 ***********************************************************/
 public class C05_P22_Transpose_Matrix {
-    public static void main(String[] args) {
-        int[][] array = {{1, 2}, {4, 5, 6}};
-
-        int[][] result = transposeMatrix(array);
-
-        
-        for (int i = 0; i < result.length; i++) {
-            for (int j = 0; j < result[i].length; j++) {
-                System.out.print(result[i][j] + " ");
-            }
-            System.out.println();
-        }
-        System.out.println();
-     }
-   
     public static int[][] transposeMatrix(int[][] array) {
     int rows = array.length;
     int cols = 0;
