@@ -1,5 +1,4 @@
 package org.example;
-
 /*
 Write a program in java to print Floyd's Triangle.
 1
@@ -9,17 +8,6 @@ Write a program in java to print Floyd's Triangle.
 10101
  */
 public class C03_P22_Print_Floyd_s_Triangle {
-    public static void main(String[] args) {
-        // Input
-        int height = 5;
-
-        // Algorithm
-        String floydTriangle = getFloydTriangle(height);
-
-        // Output
-        System.out.println(floydTriangle);
-    }
-
     public static String getFloydTriangle(int height) {
         StringBuilder result = new StringBuilder();
         int count;
