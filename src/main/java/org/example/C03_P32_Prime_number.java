@@ -1,30 +1,21 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class C03_P32_Prime_number
-{
-    public static void main( String[] args )
-    {
+/***********************************
+ Write a java program to determine whether a given number is prime or not.
+ Test Data :
+ Input a number: 13
+ Expected Output :
+ 13 is a prime number.
+ ********************************/
+public class C03_P32_Prime_number {
+    public static boolean findPrimeNumber(int number) {
+        boolean isPrimeNumber = true;
 
-        int n = 15;
-        boolean isNumberPrime = true;
-
-        for(int i=2; i<n; i++){
-
-            if(n%i == 0){
-                isNumberPrime = false;
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                isPrimeNumber = false;
             }
-            break;
         }
-        if(isNumberPrime){
-
-            System.out.println("the number " + n + " is prime");
-        }else{
-            System.out.println("the number " + n + " is not prime");
-
-        }
+        return isPrimeNumber;
     }
 }
