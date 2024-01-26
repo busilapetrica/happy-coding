@@ -7,12 +7,11 @@ package org.example;
  The factorial of 5 is : 120
  *******************************************************************************/
 public class C03_P15_Number_Factorial {
-    public static void main(String[] args) {
-        int x = 5;
+    public static int factorialNumber(int number) {
         int result = 1;
-        for (int i = 1; i <= x; i++) {
+        for (int i = 1; i <= number; i++) {
             result *= i;
         }
-        System.out.println(result);
+        return result;
     }
 }
