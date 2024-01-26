@@ -1,6 +1,5 @@
 package org.example;
 import java.math.BigInteger;
-
 /************************************************
  Write a java program to display multiple variables.
  Sample Variables :

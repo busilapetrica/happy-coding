@@ -1,5 +1,4 @@
 package org.example;
-
 /****************************************************
 Write a C program that reads 5 numbers and sums all odd values between them.
 Test Data :

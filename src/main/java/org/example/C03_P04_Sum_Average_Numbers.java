@@ -1,5 +1,4 @@
 package org.example;
-
 /*****************************************************************************
  Write program in java to read 10 numbers from keyboard and first their sum and average.
  Input the 10 numbers:

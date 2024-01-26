@@ -1,5 +1,4 @@
 package org.example;
-
 /******************************************************************************
  Write a program in java to make such a patern with as a piramide with an asteriks.
     *

@@ -1,5 +1,4 @@
 package org.example;
-import java.util.Scanner;
 /*************************************************
 Write a java program that reads two integers and checks whether they are multiplied or not.
 Test Data :

@@ -1,6 +1,4 @@
 package org.example;
-
-import java.util.Scanner;
 /*****************************************************************************
  Write program in java to to display multiplication table for a given integer..
  EX: Input the number : 15

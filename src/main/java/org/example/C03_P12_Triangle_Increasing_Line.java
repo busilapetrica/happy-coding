@@ -1,5 +1,4 @@
 package org.example;
-
 /******************************************************************************
  Write a program in java to make such a patten like right angle triangle with the number increasing by 1
  1

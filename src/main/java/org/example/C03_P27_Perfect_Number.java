@@ -1,7 +1,6 @@
 package org.example;
-
 /*************************************************
- Write a C program to check whether a given number is a 'Perfect' number or not.
+ Write a java program to check whether a given number is a 'Perfect' number or not.
  Test Data :
  Input the number : 56
  Expected Output :

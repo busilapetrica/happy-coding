@@ -1,5 +1,4 @@
 package org.example;
-
 /******************************************************************************
  * C03_P13_Consecutive_Pyramid_Number
  Write a program in java to make such a pattern with numbers increasing my 1.

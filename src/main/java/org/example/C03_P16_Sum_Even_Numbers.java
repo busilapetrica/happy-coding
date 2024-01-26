@@ -1,5 +1,4 @@
 package org.example;
-
 /******************************************************************************
  Write a program in java to display the sum of n terms of even natural numbers.
  Test data:

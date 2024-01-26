@@ -1,7 +1,4 @@
 package org.example;
-
-import java.util.Scanner;
-
 /*****************************************************************************
  Write a program in java to display the multiplier table vertically from 1 to n.
  input 8

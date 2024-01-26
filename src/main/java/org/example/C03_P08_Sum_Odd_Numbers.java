@@ -1,7 +1,4 @@
 package org.example;
-
-import java.util.Scanner;
-
 /*****************************************************************************
  Write a java program to display the n terms of odd natural numbers and their sun
  Test Data

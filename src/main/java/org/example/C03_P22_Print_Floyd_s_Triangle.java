@@ -1,12 +1,12 @@
 package org.example;
-/*
+/*********************************************
 Write a program in java to print Floyd's Triangle.
 1
 01
 101
 0101
 10101
- */
+ *********************************************/
 public class C03_P22_Print_Floyd_s_Triangle {
     public static String getFloydTriangle(int height) {
         StringBuilder result = new StringBuilder();

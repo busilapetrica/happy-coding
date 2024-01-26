@@ -1,5 +1,4 @@
 package org.example;
-
 /***************************************************
  Write a java program that accepts two integers from the user and calculates the product of the two integers.
  Test Data :
