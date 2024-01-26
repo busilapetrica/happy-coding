@@ -5,9 +5,11 @@ package org.example;
  Output:1 2 3 4 5 6 7 8 9 10
  *******************************************************************************/
 public class C03_P01_Display_First_10_Numbers {
-    public static void main(String[] args) {
+    static String loopTheNumbers(int number) {
+        String result = "";
         for(int i=1; i<=10; i++){
-            System.out.print(i + " ");
+            result += i + " ";
         }
+        return result;
     }
 }
