@@ -10,15 +10,13 @@ import java.util.Scanner;
  The odd numbers are :  1 3 5 7 9 11 13 15 17 19
  *7******************************************************************************/
 public class C03_P08_Sum_Odd_Numbers {
-    public static void main(String[] args) {
+    static String displayOddNumbersAndSum(int number) {
         int sum = 0;
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-
-        for (int i = 1; i <= 2 * x; i += 2) {
-            System.out.print(i + " ");
+        String result = "";
+        for (int i = 1; i <= 2 * number; i += 2) {
             sum += i;
+                result += i + " ";
         }
-        System.out.println("\nThe sum of odd numbers is: " + sum);
+        return (result +"," + sum);
     }
 }
