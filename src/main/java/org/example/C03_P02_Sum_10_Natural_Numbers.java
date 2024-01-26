@@ -5,11 +5,11 @@ package org.example;
  sum = 55
  *******************************************************************************/
 public class C03_P02_Sum_10_Natural_Numbers {
-    public static void main(String[] args) {
-        int resultat = 0;
-        for(int i=1; i<=10; i++){
-            resultat += i;
+    static int sumNaturalNumbers(int number) {
+        int result = 0;
+        for(int i=1; i<=number; i++){
+            result += i;
         }
-        System.out.println(resultat);
+        return result;
     }
 }
