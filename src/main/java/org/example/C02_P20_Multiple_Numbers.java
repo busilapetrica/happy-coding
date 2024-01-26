@@ -8,17 +8,11 @@ package org.example;
  0
  *******************************************************************************/
 public class C02_P20_Multiple_Numbers {
-    public static void main(String[] args) {
-        checkNumber(3);
-        checkNumber(7);
-        checkNumber(21);
-    }
-
-    private static void checkNumber(int x){
+    static int checkNumber(int x){
         if(x%3 == 0 && x%7 == 0 ){
-            System.out.println("0");
+            return 0;
         }else{
-            System.out.println("1");
+           return 1;
         }
     }
 }
