@@ -14,6 +14,6 @@ class C02_P20_Multiple_NumbersTest {
     @Test
     public void return0IfNumberIsDividedWith3And7() {
         int result = C02_P20_Multiple_Numbers.checkNumber(21);
-        assertEquals(1, result);
+        assertEquals(0, result);
     }
 }
