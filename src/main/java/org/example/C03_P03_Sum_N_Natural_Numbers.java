@@ -8,11 +8,13 @@ package org.example;
  the sum : 28
  *******************************************************************************/
 public class C03_P03_Sum_N_Natural_Numbers {
-    public static void main(String[] args) {
-        int num = 7 , result = 0;
-        for(int i=1; i<=num; i++){
-            result += i;
+    static String displayNaturalNumbersAndSum(int number) {
+        int sum = 0;
+        String result = "";
+        for(int i=1; i<=number; i++){
+            sum += i;
+            result += i +", ";
         }
-        System.out.println(result);
+        return (result + sum);
     }
 }
