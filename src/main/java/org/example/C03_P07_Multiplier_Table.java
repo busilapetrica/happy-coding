@@ -10,17 +10,15 @@ import java.util.Scanner;
  ..........
  8X1=8, 8X2=16, 8X3=24, 8X4=32, 8X5=40, 8X6=48, 8X7=56, 8X8=64
  *******************************************************************************/
-public class C03_P07_Table_Given_Integer {
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-
-        for(int i=1; i<=x; i++){
-            for(int j=1; j<=x; j++){
-                System.out.print(i + "X" + j +"=" + i*j + ", ");
+public class C03_P07_Multiplier_Table {
+    static String multiplierTable(int number) {
+        String result = "";
+        for (int i = 1; i <= number; i++) {
+            for (int j = 1; j <= number; j++) {
+                result += i + "X" + j + "=" + i * j + ",";
             }
-            System.out.println("\n");
+            result += "\n";
         }
+        return result;
     }
 }
