@@ -6,14 +6,15 @@ package org.example;
  123
  1234
  *******************************************************************************/
-public class C03_P010_Right_Number_Triangle_Patern {
-    public static void main(String[] args) {
-        int x = 4;
-        for (int i = 1; i <= x; i++) {
+public class C03_P010_Right_Number_Triangle_Pattern {
+    public static String patternTriangleNumbers(int number) {
+        String result = "";
+        for (int i = 1; i <= number; i++) {
             for (int j = 1; j <= i; j++) {
-                System.out.print(j);
+                result += j;
             }
-            System.out.println();
+            result +="\n";
         }
+        return result;
     }
 }
