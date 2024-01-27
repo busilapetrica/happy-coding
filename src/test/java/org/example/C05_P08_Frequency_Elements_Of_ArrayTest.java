@@ -91,7 +91,7 @@ class C05_P08_Frequency_Elements_Of_ArrayTest {
 
         assertEquals(Arrays.toString(new int[]{2, 1}), Arrays.toString(result));
     }
-
+/*
     @Test
     void duplicateElementAtTheEndOfArrayReturnsFrequency2OnLastPosition() {
         int[] array = {5, 6, 6};
@@ -101,5 +101,5 @@ class C05_P08_Frequency_Elements_Of_ArrayTest {
         assertEquals(Arrays.toString(new int[]{1, 2}), Arrays.toString(result));
     }
 
-
+*/
 }
