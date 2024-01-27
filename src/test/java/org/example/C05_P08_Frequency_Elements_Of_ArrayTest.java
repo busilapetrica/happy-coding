@@ -1,4 +1,4 @@
-/*
+
 package org.example;
 
 import org.junit.jupiter.api.Test;
@@ -30,17 +30,17 @@ class C05_P08_Frequency_Elements_Of_ArrayTest {
 
     @Test
     void twoSameElementsArrayReturnsFrequency2() {
-        int[] array = {5,5};
+        int[] array = {5, 5};
 
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
-        assertArrayEquals(new int[]{2, 2}, result);
+        assertArrayEquals(new int[]{2}, result);
     }
 
-    
+
     @Test
     void threeSameElementsArrayReturnsFrequency3() {
-        int[] array = {5,5, 5};
+        int[] array = {5, 5, 5};
 
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
@@ -49,7 +49,7 @@ class C05_P08_Frequency_Elements_Of_ArrayTest {
 
     @Test
     void fourSameElementsArrayReturnsFrequency3() {
-        int[] array = {5,5, 5, 5};
+        int[] array = {5, 5, 5, 5};
 
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
@@ -58,48 +58,48 @@ class C05_P08_Frequency_Elements_Of_ArrayTest {
 
     @Test
     void twoDifferentElementsArrayReturnsFrequency1ForEachElement() {
-        int[] array = {5,6};
+        int[] array = {5, 6};
 
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
-        assertArrayEquals(new int[]{1,1}, result);
+        assertArrayEquals(new int[]{1, 1}, result);
     }
 
     @Test
     void threeDifferentElementsArrayReturnsFrequency1ForEachElement() {
-        int[] array = {5,6, 7};
+        int[] array = {5, 6, 7};
 
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
-        assertArrayEquals(new int[]{1,1,1}, result);
+        assertArrayEquals(new int[]{1, 1, 1}, result);
     }
 
     @Test
     void fourDifferentElementsArrayReturnsFrequency1ForEachElement() {
-        int[] array = {5,6, 7, 8};
+        int[] array = {5, 6, 7, 8};
 
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
-        assertArrayEquals(new int[]{1,1,1, 1}, result);
+        assertArrayEquals(new int[]{1, 1, 1, 1}, result);
     }
 
     @Test
     void duplicateElementAtTheBeginningOfArrayReturnsFrequency2OnFirstPosition() {
-        int[] array = {5,5, 6};
+        int[] array = {5, 5, 6};
 
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
-        assertEquals(Arrays.toString(new int[]{2,1}), Arrays.toString(result));
+        assertEquals(Arrays.toString(new int[]{2, 1}), Arrays.toString(result));
     }
 
     @Test
     void duplicateElementAtTheEndOfArrayReturnsFrequency2OnLastPosition() {
-        int[] array = {5,6, 6};
+        int[] array = {5, 6, 6};
 
         int[] result = C05_P08_Frequency_Elements_Of_Array.countFrequency(array);
 
-        assertEquals(Arrays.toString(new int[]{1,2}), Arrays.toString(result));
+        assertEquals(Arrays.toString(new int[]{1, 2}), Arrays.toString(result));
     }
 
 
-}*/
+}
