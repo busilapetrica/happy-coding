@@ -2,8 +2,6 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class C05_P16_Second_Largest_Number_In_ArrayTest {

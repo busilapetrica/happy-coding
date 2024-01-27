@@ -14,13 +14,14 @@ class C05_P17_Second_Smallest_Number_In_ArrayTest {
     @Test
     public void returnSecondSmallestNumberFromArrayWith2ElementsWhereSecondIsBiggest() {
         int[] array = {7, 9};
-        int result = C05_P16_Second_Largest_Number_In_Array.findSecondLargestElement(array);
+        int result = C05_P17_Second_Smallest_Number_In_Array.findSecondLargestElement(array);
         assertEquals(7, result);
     }
     @Test
     public void returnSecondSmallestNumberFromArrayWith2ElementsWhereFirstIsBiggest() {
         int[] array = {9, 7};
-        int result = C05_P16_Second_Largest_Number_In_Array.findSecondLargestElement(array);
+        int result = C05_P17_Second_Smallest_Number_In_Array.findSecondLargestElement(array);
         assertEquals(7, result);
     }
+
 }
