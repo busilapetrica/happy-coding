@@ -1,9 +1,4 @@
 package org.example;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 /******************************************************************************
  Input the number of elements to be stored in the array: 4
  Input 4 elements in the array :
