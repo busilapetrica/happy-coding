@@ -1,5 +1,4 @@
-/*
-    package org.example;
+ package org.example;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -13,7 +12,7 @@ import org.junit.jupiter.api.Test;
             // Call logic
             int[] result = C05_P02_Display_Reverse_Array_Elements.arrayToStringRevers(array);
             // Assert result
-            assertEquals(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1, 1}, result);
+            assertArrayEquals(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1, 1}, result);
         }
 
         @Test
@@ -21,7 +20,7 @@ import org.junit.jupiter.api.Test;
             int[] array = {33, 42, 51}; // Initial array
             int[] result = C05_P02_Display_Reverse_Array_Elements.arrayToStringRevers(array);
             // Assert result
-            assertEquals(new int[]{51, 42, 33}, result);
+            assertArrayEquals(new int[]{51, 42, 33}, result);
         }
 
         @Test
@@ -29,8 +28,7 @@ import org.junit.jupiter.api.Test;
             int[] array = {3, 4}; // Initial array
             int[] result = C05_P02_Display_Reverse_Array_Elements.arrayToStringRevers(array);
             // Assert result
-            assertEquals(new int[]{4, 3}, result);
+            assertArrayEquals(new int[]{4, 3}, result);
         }
     }
 
-*/

@@ -1,7 +1,4 @@
 package org.example;
-
-import java.util.Scanner;
-
 /******************************************************************************
  Write a program in java to read n number of values in an array and display them in reverse order.
  Test Data :
