@@ -1,4 +1,5 @@
 package org.example;
+
 /******************************************************************************
  Write a java program to find the LCM of any two numbers using HCF.
  Test Data :
@@ -6,29 +7,28 @@ package org.example;
  Input 2nd number for LCM: 20
  Expected Output :
  The LCM of 15 and 20 is : 60
+ highest common factor
+ least common multiple
  *******************************************************************************/
-public class C03_P44_Least_Common_Multiple{
-    public static void main(String[] args) {
-        int firstNumber = 15;
-        int secondNumber = 20;
-
+public class C03_P44_Least_Common_Multiple {
+    public static int findLeastCommonMultiple(int firstNumber, int secondNumber) {
         int hcf = findHCF(firstNumber, secondNumber);
         int lcm = findLCM(firstNumber, secondNumber, hcf);
 
-        System.out.println("The LCM of " + firstNumber + " and " + secondNumber + " is : " + lcm);
+        return lcm;
     }
 
-    public static int findHCF(int a, int b) {
-        while (b != 0) {
-            int temp = b;
-            b = a % b;
-            a = temp;
+    public static int findHCF(int firstNumber, int secondNumber) {
+        while (secondNumber != 0) {
+            int temp = secondNumber;
+            secondNumber = firstNumber % secondNumber;
+            firstNumber = temp;
         }
-        return a;
+        return firstNumber;
     }
 
-    public static int findLCM(int a, int b, int hcf) {
-        return (a * b) / hcf;
+    public static int findLCM(int firstNumber, int secondNumber, int hcf) {
+        return (firstNumber * secondNumber) / hcf;
     }
 }
 
