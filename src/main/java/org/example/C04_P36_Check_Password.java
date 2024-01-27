@@ -8,13 +8,13 @@ package org.example;
  *******************************************************************************/
 import java.util.Scanner;
 public class C04_P36_Check_Password {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int password = scanner.nextInt();
+    public static boolean checkpassword(int password) {
+        boolean checkPasword = false;
         if(password == 12345){
-            System.out.print("The password is correct");
+            checkPasword = true;
         }else{
-            System.out.print("The password is incorrect");
+            checkPasword = false;
         }
+        return checkPasword;
     }
 }
