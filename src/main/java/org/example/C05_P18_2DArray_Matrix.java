@@ -23,6 +23,8 @@ package org.example;
  7 8 9
  ********************************************/
 public class C05_P18_2DArray_Matrix {
+    private C05_P18_2DArray_Matrix () {}
+
 public static int[][] pattern2DMatrix(int[]... arrays) {
         //count maximum lenght of arrays
     int count = 0;

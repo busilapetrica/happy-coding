@@ -18,6 +18,8 @@ package org.example;
  1 5 8 7 10
  ********************************************/
 public class C05_P14_Add_New_Element_To_Unsorted_Array {
+    private C05_P14_Add_New_Element_To_Unsorted_Array () {}
+
     public static int[] addElementToArray(int[] array, int newElement) {
         int[] newArray = new int[array.length + 1];
 

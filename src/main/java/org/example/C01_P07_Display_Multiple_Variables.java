@@ -7,6 +7,8 @@ import java.math.BigInteger;
  Declaration :
  ************************************************/
 public class C01_P07_Display_Multiple_Variables {
+    private C01_P07_Display_Multiple_Variables () {}
+
     public static String displayMultipleVariable(int a, int b, long ax, short s, float x, double dx, char c) {
 
         BigInteger ux = new BigInteger("2541567890");

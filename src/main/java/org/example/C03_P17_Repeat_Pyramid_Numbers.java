@@ -4,6 +4,8 @@ package org.example;
  the number in the same row.
  *******************************************************************************/
 public class C03_P17_Repeat_Pyramid_Numbers {
+    private C03_P17_Repeat_Pyramid_Numbers () {}
+
     public static String pyramidNumbers(int rows) {
         int count = 1;
         String result ="";

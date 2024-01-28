@@ -8,6 +8,8 @@ package org.example;
  *******************************************************************************/
 import java.util.Scanner;
 public class C04_P36_Check_Password {
+    private C04_P36_Check_Password () {}
+
     public static boolean checkpassword(int password) {
         boolean checkPasword = false;
         if(password == 12345){

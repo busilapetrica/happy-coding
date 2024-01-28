@@ -11,6 +11,8 @@ Employees ID = 0342
 Salary = U$ 120000.00
  ********************************************/
 public class C01_P12_Employed_salary {
+    private C01_P12_Employed_salary () {}
+
     public static String employedSalaryCalculation(int amount_hour, int working_hours, String id_imployed) {
        String result ="";
         double employees_salary = amount_hour * working_hours;

@@ -11,6 +11,8 @@ package org.example;
  least common multiple
  *******************************************************************************/
 public class C03_P44_Least_Common_Multiple {
+    private C03_P44_Least_Common_Multiple () {}
+
     public static int findLeastCommonMultiple(int firstNumber, int secondNumber) {
         int hcf = findHCF(firstNumber, secondNumber);
         int lcm = findLCM(firstNumber, secondNumber, hcf);

@@ -15,6 +15,8 @@ package org.example;
  Addition of the left Diagonal elements is :5
  *******************************************************/
 public class C05_P24_Sum_Left_Diagonal_Matrix {
+    private C05_P24_Sum_Left_Diagonal_Matrix () {}
+
         public static int sumLeftDiagonal(int[][] array) {
             int size = array.length;
             int sum = 0;

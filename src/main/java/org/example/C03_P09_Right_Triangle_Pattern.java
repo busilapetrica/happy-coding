@@ -7,6 +7,8 @@ package org.example;
  ****
  *******************************************************************************/
 public class C03_P09_Right_Triangle_Pattern {
+    private C03_P09_Right_Triangle_Pattern () {}
+
     public static String trianglePattern(int number) {
         String result = "";
         for (int i = 0; i <= number -1; i++) {

@@ -13,6 +13,8 @@ package org.example;
  *  Elements in array are:
  *  *********************************************************/
 public class C05_P23_Sum_Diagonal_Matrix {
+    private C05_P23_Sum_Diagonal_Matrix () {}
+
     public static int diagonalMatrixSum(int[][] array) {
         int size = array.length;
         int sum = 0;

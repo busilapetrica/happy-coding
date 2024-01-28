@@ -15,6 +15,8 @@ package org.example;
  2 4 5 7 9
  ********************************************************/
 public class C05_P11_Array_Sorting_Ascending_Order {
+    private C05_P11_Array_Sorting_Ascending_Order () {}
+
     public static int[] sortingArrayInAscendingOrder(int[] array){
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {

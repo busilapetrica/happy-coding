@@ -6,6 +6,8 @@ package org.example;
  And also print a very large 'C'.
  *************************************************/
 public class C01_P03_Print_Pattern_F_And_C {
+    private C01_P03_Print_Pattern_F_And_C () {}
+
     public static String printPatternOfLetterF(int size) {
         String result = "";
 

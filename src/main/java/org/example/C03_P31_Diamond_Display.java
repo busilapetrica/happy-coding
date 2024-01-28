@@ -11,6 +11,8 @@ package org.example;
       *
  *************************************/
 public class C03_P31_Diamond_Display {
+    private C03_P31_Diamond_Display () {}
+
     public static String diamondDisplay(int rows) {
         String result = "";
         //first part

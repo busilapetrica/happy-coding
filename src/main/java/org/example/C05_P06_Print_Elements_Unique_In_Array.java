@@ -11,6 +11,8 @@ package org.example;
  3 5
  *****************************************************************************/
 public class C05_P06_Print_Elements_Unique_In_Array {
+    private C05_P06_Print_Elements_Unique_In_Array () {}
+
  public static int[] uniqueElementsFromArray(int[] array) {
         int count = 0;
         // Count the number of unique elements

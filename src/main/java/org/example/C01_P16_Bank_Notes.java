@@ -15,6 +15,8 @@ Write a java program to read an amount (integer value) and break the amount into
         0 Note(s) of 1.00
  ***************************************************************/
 public class C01_P16_Bank_Notes {
+    private C01_P16_Bank_Notes () {}
+
     public static String bankNotes(int amount) {
         int total_bank_notes;
         total_bank_notes = amount /100;

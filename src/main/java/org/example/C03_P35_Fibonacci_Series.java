@@ -10,6 +10,8 @@ package org.example;
  F(n)=F(n−1)+F(n−2)
  **************************************************/
 public class C03_P35_Fibonacci_Series {
+    private C03_P35_Fibonacci_Series () {}
+
     public static String fibonacciNumbers(int countFibonacciNumbers) {
         int previousNumber = 0;
         int lastNumber = 1;

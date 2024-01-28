@@ -12,6 +12,8 @@ package org.example;
  0
  *******************************************************************************/
 public class C02_P05_Integer_Divided {
+    private C02_P05_Integer_Divided () {}
+
     public static int checkNumber(int x){
         if(x%3 == 0 || x%7 == 0 ){
             return 1;

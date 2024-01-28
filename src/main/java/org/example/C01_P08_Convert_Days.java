@@ -10,6 +10,8 @@ package org.example;
  Days: 3
  *************************************/
 public class C01_P08_Convert_Days {
+    private C01_P08_Convert_Days () {}
+
     static String convertDays(int days) {
 
         int years_total = days  / 365;

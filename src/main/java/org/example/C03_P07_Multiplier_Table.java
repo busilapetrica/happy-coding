@@ -8,6 +8,8 @@ package org.example;
  8X1=8, 8X2=16, 8X3=24, 8X4=32, 8X5=40, 8X6=48, 8X7=56, 8X8=64
  *******************************************************************************/
 public class C03_P07_Multiplier_Table {
+    private C03_P07_Multiplier_Table () {}
+
     static String multiplierTable(int number) {
         String result = "";
         for (int i = 1; i <= number; i++) {

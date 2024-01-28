@@ -9,6 +9,8 @@ Expected Output:
 Maximum value of three integers: 35
 *****************************************************/
 public class C01_P13_Maximum_Of_Three {
+    private C01_P13_Maximum_Of_Three () {}
+
     static int findMaximOf3Integers(int first_int, int second_int, int third_int) {
         int biggestInteger;
         if(first_int > second_int && first_int > third_int){

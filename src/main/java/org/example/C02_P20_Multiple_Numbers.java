@@ -8,6 +8,8 @@ package org.example;
  0
  *******************************************************************************/
 public class C02_P20_Multiple_Numbers {
+    private C02_P20_Multiple_Numbers () {}
+
     static int checkNumber(int x){
         if(x%3 == 0 && x%7 == 0 ){
             return 0;

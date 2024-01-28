@@ -9,6 +9,8 @@ package org.example;
  So, the number is not perfect.
  *************************************************/
 public class C03_P27_Perfect_Number {
+    private C03_P27_Perfect_Number () {}
+
     public static boolean findPerfectNumber(int number) {
         int divisor_sum = 0;
         boolean result;

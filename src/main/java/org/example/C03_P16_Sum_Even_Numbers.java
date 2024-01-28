@@ -7,6 +7,8 @@ package org.example;
  The sum : 30
  *******************************************************************************/
 public class C03_P16_Sum_Even_Numbers {
+    private C03_P16_Sum_Even_Numbers () {}
+
     public static int sumEvenNumbers(int numbers) {
         int result = 0;
         for (int i = 0; i <= numbers * 2; i += 2) {

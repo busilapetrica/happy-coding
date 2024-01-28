@@ -12,6 +12,8 @@ package org.example;
  Number of negative numbers: 2
  ********************************************/
 public class C01_P27_Count_Positive_Negative_Numbers {
+    private C01_P27_Count_Positive_Negative_Numbers () {}
+
     static String countNumbersPositiveAndNegative(int[] array) {
         String result = "";
         int count_positive = 0, count_negative = 0;

@@ -13,6 +13,8 @@ package org.example;
  The Second smallest element in the array is : 4
  ********************************************/
 public class C05_P17_Second_Smallest_Number_In_Array {
+    private C05_P17_Second_Smallest_Number_In_Array () {}
+
     public static int findSecondLargestElement(int[] array) {
 
         if( array.length == 2){

@@ -15,6 +15,8 @@ package org.example;
  The new list is : 1 2 4 5
  ********************************************/
 public class C05_P15_Delete_Element_From_Array {
+    private C05_P15_Delete_Element_From_Array () {}
+
     public static int[] deleteElementFromArray(int[] array, int positionToDelete) {
 
         int[] newArray = new int[array.length - 1];

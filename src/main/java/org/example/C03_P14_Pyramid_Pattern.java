@@ -7,6 +7,8 @@ package org.example;
  * * * *
  *******************************************************************************/
 public class C03_P14_Pyramid_Pattern {
+    private C03_P14_Pyramid_Pattern () {}
+
     public static String pyramidPattern(int rows) {
         int count = 1;
         String result = "";

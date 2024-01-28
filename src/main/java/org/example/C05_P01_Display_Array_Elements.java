@@ -12,6 +12,8 @@ package org.example;
  Elements in array are: 33 42 51
  *******************************************************************************/
 public class C05_P01_Display_Array_Elements {
+    private C05_P01_Display_Array_Elements () {}
+
     public static int[] addElementsToNewArray(int[] array) {
         int[] newArray = new int[array.length];
 

@@ -5,6 +5,8 @@ package org.example;
  Output : 15X1=15
  *******************************************************************************/
 public class C03_P06_Table_Given_Integer {
+    private C03_P06_Table_Given_Integer () {}
+
     static String displayMultiplicationTable(int number) {
         String result = "";
         for (int i = 1; i <= 10; i++) {

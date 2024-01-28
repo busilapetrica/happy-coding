@@ -9,6 +9,8 @@ package org.example;
  HCF of 24 and 28 is : 4
  *******************************************************************************/
 public class C03_P43_Highest_Common_Factor {
+    private C03_P43_Highest_Common_Factor () {}
+
     public static int findHighestCommonFactor(int firstNumber, int secondNumber) {
         // Algoritmul Euclid
         while (secondNumber != 0) {

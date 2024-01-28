@@ -15,6 +15,8 @@ import java.util.Scanner;
  *******************************************************************************/
 
 public class C05_P03_Array_Sum {
+    private C05_P03_Array_Sum () {}
+
 
     public static int calculateArraySum(int[] array) {
         int arraySum = 0;

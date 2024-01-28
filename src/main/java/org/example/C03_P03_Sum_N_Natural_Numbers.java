@@ -8,6 +8,8 @@ package org.example;
  the sum : 28
  *******************************************************************************/
 public class C03_P03_Sum_N_Natural_Numbers {
+    private C03_P03_Sum_N_Natural_Numbers () {}
+
     static String displayNaturalNumbersAndSum(int number) {
         int sum = 0;
         String result = "";

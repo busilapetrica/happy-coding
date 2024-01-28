@@ -20,6 +20,8 @@ import java.util.Arrays;
  3, 3, 2, 2, 1, 1
  *****************************************************/
 class C05_P07_Array_Merge_Sorted_Descending {
+    private C05_P07_Array_Merge_Sorted_Descending () {}
+
 
     public static int[] mergeArraysAndSorting(int[] array1, int[] array2) {
         int arraysLength = array1.length + array2.length;

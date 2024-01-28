@@ -14,6 +14,8 @@ package org.example;
  7 5 2
  *******************************************************************************/
 public class C05_P02_Display_Reverse_Array_Elements {
+    private C05_P02_Display_Reverse_Array_Elements () {}
+
 
     public static int[] arrayToStringRevers(int[] array) {
         int[] reverseArray = new int[array.length];

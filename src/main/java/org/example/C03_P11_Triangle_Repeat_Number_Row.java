@@ -8,6 +8,8 @@ package org.example;
  4444
  *******************************************************************************/
 public class C03_P11_Triangle_Repeat_Number_Row {
+    private C03_P11_Triangle_Repeat_Number_Row () {}
+
     public static String triangleRepeatNumber(int number) {
         String result ="";
         for (int i = 1; i <= number; i++) {

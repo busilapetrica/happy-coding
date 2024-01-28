@@ -9,6 +9,8 @@ Expected Output:
 Average consumption (km/lt) 70.000
  ************************************************/
 public class C01_P14_Bike_Average_Consumption {
+    private C01_P14_Bike_Average_Consumption () {}
+
     static float calculateAverageConsumption(int distance, int fuel_spend_liters) {
         float avarege_consuption;
         avarege_consuption = distance / fuel_spend_liters;

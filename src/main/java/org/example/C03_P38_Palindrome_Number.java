@@ -5,6 +5,8 @@ package org.example;
  Expect output:  121 is a palindrome number
  *******************************************************************************/
 public class C03_P38_Palindrome_Number {
+    private C03_P38_Palindrome_Number () {}
+
     public static String isPalindrome(int number) {
         int originalNumber = number;
         int reversedNumber = 0;

@@ -7,6 +7,8 @@ package org.example;
  78910
  *******************************************************************************/
 public class C03_P12_Triangle_Increasing_Line {
+    private C03_P12_Triangle_Increasing_Line () {}
+
     public static String patternTriangle(int rows) {
         int count = 1;
         String result = "";

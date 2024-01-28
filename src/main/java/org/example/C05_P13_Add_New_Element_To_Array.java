@@ -19,6 +19,8 @@ package org.example;
  2 5 7 8 9 11
  */
 public class C05_P13_Add_New_Element_To_Array {
+    private C05_P13_Add_New_Element_To_Array () {}
+
     public static int[] addElementToArray(int[] array, int newElement){
         int[] newArray = new int[array.length + 1];
 

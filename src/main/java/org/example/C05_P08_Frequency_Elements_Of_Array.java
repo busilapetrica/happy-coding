@@ -14,6 +14,8 @@ package org.example;
  43 occurs 1 times
 ********************************************/
 public class C05_P08_Frequency_Elements_Of_Array {
+    private C05_P08_Frequency_Elements_Of_Array () {}
+
 
     public static int[] countFrequency(int[] array) {
         int[] result = new int[array.length];

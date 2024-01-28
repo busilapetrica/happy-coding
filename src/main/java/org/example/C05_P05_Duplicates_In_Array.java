@@ -13,6 +13,8 @@ import java.util.Arrays;
  Total number of duplicate elements found in the array is : 1
  *******************************************************************************/
 public class C05_P05_Duplicates_In_Array {
+    private C05_P05_Duplicates_In_Array () {}
+
 
     public static int findDuplicateInArray(int[] array) {
         int count = 0;

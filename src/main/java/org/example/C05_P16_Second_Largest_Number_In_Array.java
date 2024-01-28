@@ -1,6 +1,8 @@
 package org.example;
 
 public class C05_P16_Second_Largest_Number_In_Array {
+    private C05_P16_Second_Largest_Number_In_Array () {}
+
     public static int findSecondLargestElement(int[] array) {
 
         if (array.length == 2) {

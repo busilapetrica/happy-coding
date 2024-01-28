@@ -29,6 +29,8 @@ The Addition of two matrix is :
 *******************************************************************************/
 
 public class C05_P19_Additional_Of_2_Matrix{
+    private C05_P19_Additional_Of_2_Matrix() {}
+
 public static int[][] calculateAdditionalMatrix(int[][]... arrays) {
 
     int size = arrays.length;

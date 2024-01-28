@@ -8,6 +8,8 @@ package org.example;
  13 is a prime number.
  ********************************/
 public class C03_P32_Prime_number {
+    private C03_P32_Prime_number () {}
+
     public static boolean findPrimeNumber(int number) {
         boolean isPrimeNumber = true;
 

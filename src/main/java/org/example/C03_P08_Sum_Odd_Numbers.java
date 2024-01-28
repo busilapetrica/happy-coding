@@ -7,6 +7,8 @@ package org.example;
  The odd numbers are :  1 3 5 7 9 11 13 15 17 19
  *7******************************************************************************/
 public class C03_P08_Sum_Odd_Numbers {
+    private C03_P08_Sum_Odd_Numbers () {}
+
     static String displayOddNumbersAndSum(int number) {
         int sum = 0;
         String result = "";

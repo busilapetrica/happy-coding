@@ -15,6 +15,8 @@ package org.example;
  15 10 12
  *******************************************************************************/
 public class C05_P04_Array_Copy {
+    private C05_P04_Array_Copy () {}
+
 
     public static int[] copyToSecondArray(int[] array) {
         //copy array to a new array

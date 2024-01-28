@@ -7,6 +7,8 @@ package org.example;
  12321
  *******************************************************************************/
 public class C03_P36_Pattern_Increase_Decrease_Row {
+    private C03_P36_Pattern_Increase_Decrease_Row () {}
+
     public static String patternIncreaseAndDecreaseNumbers(int rows) {
         String result = "";
         for (int i = 1; i <= rows; i++) {

@@ -8,6 +8,8 @@ package org.example;
  7 8 9 10
  *******************************************************************************/
 public class C03_P13_Consecutive_Pyramid_Number {
+    private C03_P13_Consecutive_Pyramid_Number () {}
+
     public static String consecutivePyramid(int rows) {
         int count = 1;
         String result ="";

@@ -12,6 +12,8 @@ Maximum element is : 45
 Minimum element is : 21
  ***********************************************************/
 public class C05_P09_Maximum_And_Minimum_Elements_In_Array {
+    private C05_P09_Maximum_And_Minimum_Elements_In_Array () {}
+
     public static int[] find_maxim_and_minim_elements(int[] array){
             int[] arrayMinimumAndMaximum = new int[2];
             //the method name is bubbleSort

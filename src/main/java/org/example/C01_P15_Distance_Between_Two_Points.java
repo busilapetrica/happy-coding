@@ -11,6 +11,8 @@ Expected Output:
 Distance between the said points: 11.1803
  ************************************************/
 public class C01_P15_Distance_Between_Two_Points {
+    private C01_P15_Distance_Between_Two_Points () {}
+
     static String calculateDistance(int input_x1, int input_x2, int input_y1, int input_y2) {
         float distance = ((input_x2 - input_x1)*(input_x2 - input_x1))+((input_y2 - input_y1)*(input_y2 - input_y1));
        return (String.format("%.4f", sqrt(distance)));

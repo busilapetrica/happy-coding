@@ -11,6 +11,8 @@ Expected Output:
 Sum of all odd values: 46
  *****************************************************/
 public class C01_P22_Sum_Of_5_odd_numbers {
+    private C01_P22_Sum_Of_5_odd_numbers () {}
+
     static int calculateSumOddNumbers(int[] inputs) {
         int result=0;
 

@@ -11,6 +11,8 @@ Expected Output :
 1   4   6   4   1
  */
 public class C03_P33_Display_Pascals_Triangle {
+    private C03_P33_Display_Pascals_Triangle () {}
+
     public static String pascalsTriangle(int rows) {
         String result = "";
         int count = 1;

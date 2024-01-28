@@ -5,6 +5,8 @@ package org.example;
  sum = 55
  *******************************************************************************/
 public class C03_P02_Sum_10_Natural_Numbers {
+    private C03_P02_Sum_10_Natural_Numbers () {}
+
     static int sumNaturalNumbers(int number) {
         int result = 0;
         for(int i=1; i<=number; i++){

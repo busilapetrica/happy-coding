@@ -16,6 +16,8 @@ package org.example;
   25 47
  **********************************************************************/
 public class C05_P10_Odd_And_Even_Numbers {
+    private C05_P10_Odd_And_Even_Numbers () {}
+
     public static int[][] separateOddAndEvenNumbers(int[] array) {
         int countEven = 0;
         int countOdd = 0;

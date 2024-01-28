@@ -8,6 +8,8 @@ Expected Output:
 Multiplied! /Not multiplied!
  *************************************************/
 public class C01_P24_Integer_Multiplied {
+    private C01_P24_Integer_Multiplied () {}
+
     static String checkMultipliedInt(int number1, int number2) {
         String result ="";
         if(number1 > number2)

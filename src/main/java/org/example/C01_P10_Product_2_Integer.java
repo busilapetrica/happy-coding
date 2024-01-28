@@ -8,6 +8,8 @@ package org.example;
  Product of the above two integers = 375
  **************************************************/
 public class C01_P10_Product_2_Integer {
+    private C01_P10_Product_2_Integer () {}
+
     static int productOf2Integers(int integer1, int integer2) {
         int result = integer1*integer2;
         return result;
