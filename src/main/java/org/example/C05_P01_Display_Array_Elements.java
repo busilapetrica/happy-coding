@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Scanner;
-
 /******************************************************************************
  Write a program in java to store elements in an array and print them.
  Test Data :
@@ -14,14 +12,12 @@ import java.util.Scanner;
  Elements in array are: 33 42 51
  *******************************************************************************/
 public class C05_P01_Display_Array_Elements {
-    public static String arrayToString(int[] array) {
-        StringBuilder stringBuilder = new StringBuilder();
+    public static int[] addElementsToNewArray(int[] array) {
+        int[] newArray = new int[array.length];
+
         for (int i = 0; i < array.length; i++) {
-            stringBuilder.append(array[i]);
-            if (i < array.length - 1) {
-                stringBuilder.append(", ");
-            }
+            newArray[i] = array[i];
         }
-        return stringBuilder.toString();
+        return newArray;
     }
 }
