@@ -13,7 +13,7 @@ class C05_P09_Maximum_And_Minimum_Element_In_arrayTest {
         // Call logic
         int[] result = C05_P09_Maximum_And_Minimum_Elements_In_Array.find_maxim_and_minim_elements(array);
         // Assert result
-        assertEquals("[1, 3]", Arrays.toString(result));
+        assertArrayEquals(new int[] {1, 3}, result);
     }
     @Test
     public void findMaximAndMinimInArrayWith4Elements() {
@@ -21,6 +21,6 @@ class C05_P09_Maximum_And_Minimum_Element_In_arrayTest {
         // Call logic
         int[] result = C05_P09_Maximum_And_Minimum_Elements_In_Array.find_maxim_and_minim_elements(array);
         // Assert result
-        assertEquals("[5, 90]", Arrays.toString(result));
+        assertArrayEquals(new int[] {5, 90}, result);
     }
 }

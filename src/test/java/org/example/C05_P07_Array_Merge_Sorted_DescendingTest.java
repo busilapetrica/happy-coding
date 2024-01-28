@@ -13,7 +13,7 @@ public class C05_P07_Array_Merge_Sorted_DescendingTest {
             // Call logic
             int[] result = C05_P07_Array_Merge_Sorted_Descending.mergeArraysAndSorting(array1,array2);
             // Assert result
-            assertEquals("[3, 3, 2, 2, 1, 1]", Arrays.toString(result));
+            assertArrayEquals(new int[]{3, 3, 2, 2, 1, 1}, result);
         }
     @Test
     public void mergeTowArraysWithFourElementsToCommaSeparatedDescendingList() {
@@ -22,7 +22,7 @@ public class C05_P07_Array_Merge_Sorted_DescendingTest {
         // Call logic
         int[] result = C05_P07_Array_Merge_Sorted_Descending.mergeArraysAndSorting(array1,array2);
         // Assert result
-        assertEquals("[4, 4, 3, 3, 2, 2, 1, 1]", Arrays.toString(result));
+        assertArrayEquals(new int[]{4, 4, 3, 3, 2, 2, 1, 1}, result);
     }
     }
 
