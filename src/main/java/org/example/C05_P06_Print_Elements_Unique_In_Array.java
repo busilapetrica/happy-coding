@@ -11,10 +11,8 @@ package org.example;
  3 5
  *****************************************************************************/
 public class C05_P06_Print_Elements_Unique_In_Array {
-
  public static int[] uniqueElementsFromArray(int[] array) {
         int count = 0;
-
         // Count the number of unique elements
         for (int i = 0; i < array.length; i++) {
             boolean isUnique = true;
@@ -28,11 +26,9 @@ public class C05_P06_Print_Elements_Unique_In_Array {
                 count++;
             }
         }
-
         // Create a new array to store unique elements
         int[] newArray = new int[count];
         count = 0;
-
         // Populate the new array with unique elements
         for (int i = 0; i < array.length; i++) {
             boolean isUnique = true;
@@ -45,13 +41,11 @@ public class C05_P06_Print_Elements_Unique_In_Array {
             if (isUnique) {
                 newArray[count++] = array[i];
             }
-
             // Skip duplicates
             while (i < array.length - 1 && array[i] == array[i + 1]) {
                 i++;
             }
         }
-
    // Resize the array to the actual count of unique elements
         int[] resizedArray = new int[count];
         for (int i = 0; i < count; i++) {
