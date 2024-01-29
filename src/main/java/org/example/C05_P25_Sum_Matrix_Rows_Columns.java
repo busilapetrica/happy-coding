@@ -22,20 +22,19 @@ package org.example;
  ********************************************/
 public class C05_P25_Sum_Matrix_Rows_Columns {
     public static int[][] calculateRowsAndColumns(int[][] matrix) {
-        int maxRows = matrix.length;
         int maxCols = 0;
-
-        for(int i=0; i<matrix.length; i++){
-            for (int j=0; j<matrix[i].length; j++){
-              if(maxCols <matrix[i].length){
-                  maxCols = matrix[i].length;
-              }
+        //verify maxim elements from each row and make the columns number
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (maxCols < matrix[i].length) {
+                    maxCols = matrix[i].length;
+                }
             }
         }
-
-        int[][] arraySum = new int[maxRows][maxCols];
-
-        for (int i = 0; i < maxRows; i++) {
+        //make the new array with 2 arrays and columns
+        int[][] arraySum = new int[2][maxCols];
+        //calculate the sum off each array
+        for (int i = 0; i < matrix.length; i++) {
             int rowSum = 0;
             for (int j = 0; j < maxCols; j++) {
                 if (j < matrix[i].length) {
@@ -44,10 +43,10 @@ public class C05_P25_Sum_Matrix_Rows_Columns {
                 arraySum[0][i] = rowSum;
             }
         }
-
+        //calculate every column from each array
         for (int j = 0; j < maxCols; j++) {
             int colSum = 0;
-            for (int i = 0; i < maxRows; i++) {
+            for (int i = 0; i < matrix.length; i++) {
                 if (j < matrix[i].length) {
                     colSum += matrix[i][j];
                 }
