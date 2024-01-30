@@ -39,4 +39,11 @@ class C05_P05_Duplicates_In_ArrayTest {
         // Assert result
         assertEquals(0, result);
     }
+
+    @Test
+    public void testEmptyArray() {
+        int[] array = {};
+        int result = C05_P05_Duplicates_In_Array.findDuplicateInArray(array);
+        assertEquals(0, result);
+    }
 }
