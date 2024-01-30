@@ -21,4 +21,10 @@ class C01_P13_Maximum_Of_ThreeTest {
         assertEquals(9 , result);
     }
 
+    @Test
+    public void returnMaximumOfThreeIntegersWhenAll3AreEquals() {
+        int result = C01_P13_Maximum_Of_Three.findMaximOf3Integers(4,4,4);
+        assertEquals(4 , result);
+    }
+
 }
