@@ -38,9 +38,6 @@ public class C05_P14_Add_New_Element_To_Unsorted_Array {
                 break;
             }
         }
-        if (newIndex < newArray.length) {
-            newArray[newIndex] = newElement;
-        }
         return newArray;
     }
 }
