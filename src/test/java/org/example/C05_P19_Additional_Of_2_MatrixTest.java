@@ -8,12 +8,20 @@ class C05_P19_Additional_Of_2_MatrixTest {
 
     @Test
     public void returnAdditionalOf2dMatrix() {
-        int[][] array1 = {{1, 2},{3, 4}};
-        int[][] array2 = {{5, 6},{7, 8}};
+        int[][] array1 = {{1, 2}, {3, 4}};
+        int[][] array2 = {{5, 6}, {7, 8}};
 
         int[][] result = C05_P19_Additional_Of_2_Matrix.calculateAdditionalMatrix(array1, array2);
-
         assertArrayEquals(new int[][]{{6, 8}, {10, 12}}, result);
+    }
+
+    @Test
+    public void returnAdditionalOf2DifferentMatrix() {
+        int[][] array1 = {{1, 2}, {3, 4}};
+        int[][] array2 = {{5, 6, 9}, {7, 8, 10}};
+
+        int[][] result = C05_P19_Additional_Of_2_Matrix.calculateAdditionalMatrix(array1, array2);
+        assertArrayEquals(new int[][]{{6, 8, 9}, {10, 12, 10}}, result);
     }
 
 }
