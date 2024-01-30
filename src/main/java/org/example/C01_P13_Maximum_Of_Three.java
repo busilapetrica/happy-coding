@@ -11,15 +11,13 @@ Maximum value of three integers: 35
 public class C01_P13_Maximum_Of_Three {
     private C01_P13_Maximum_Of_Three () {}
 
-    static int findMaximOf3Integers(int first_int, int second_int, int third_int) {
-        int biggestInteger;
-        if(first_int > second_int && first_int > third_int){
-            biggestInteger = first_int;
-        }else if(second_int > first_int && second_int > third_int){
-           biggestInteger = second_int;
-        }else{
-            biggestInteger = third_int;
+    public static int findMaximOf3Integers(int first_int, int second_int, int third_int) {
+        if (first_int > second_int && first_int > third_int) {
+            return first_int;
+        } else if (second_int > first_int && second_int > third_int) {
+            return second_int;
+        } else {
+            return third_int;
         }
-        return biggestInteger;
     }
 }
