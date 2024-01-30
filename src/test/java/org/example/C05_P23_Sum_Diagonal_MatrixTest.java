@@ -7,10 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class C05_P23_Sum_Diagonal_MatrixTest {
     @Test
     public void returnSumDiagonal2X2Square() {
-        int[][] array = {{1, 2,}, {3, 4}}; // Initial array
-        // Call logic
+        int[][] array = {
+                {1, 2,},
+                {3, 4}};
+
         int result = C05_P23_Sum_Diagonal_Matrix.diagonalMatrixSum(array);
-        // Assert result
         assertEquals(5, result);
 
     }

@@ -27,24 +27,17 @@ package org.example;
  0 0 9
  *************************************/
 public class C05_P26_Lower_Triangular_Matrix {
-    public static int[][] triangularMatrix(int[][] array) {
-        int sizeArray = array.length;
-        int countRows = 0;
+    public static int[][] triangularMatrix(int[][] matrix) {
 
-        for (int i = 0; i < sizeArray; i++) {
-            if (countRows < array[i].length) {
-                countRows = array[i].length;
-            }
-        }
 
-        int[][] triangularArray = new int[sizeArray][countRows];
+        int[][] triangularArray = new int[3][3];
 
-        for (int i = 0; i < sizeArray; i++) {
-            for (int j = 0; j < countRows; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 if (j < i) {
                     triangularArray[i][j] = 0;
                 } else {
-                    triangularArray[i][j] = array[i][j];
+                    triangularArray[i][j] = matrix[i][j];
                 }
             }
         }

@@ -22,8 +22,6 @@ public class C05_P24_Sum_Left_Diagonal_Matrix {
             for(int i = size - 1; i >= 0; --i) {
                 if (i < array[i].length) {
                     sum += array[i][i];
-                } else {
-                    sum += 0;
                 }
             }
             return sum;
