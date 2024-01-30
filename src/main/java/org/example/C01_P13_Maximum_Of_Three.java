@@ -12,12 +12,16 @@ public class C01_P13_Maximum_Of_Three {
     private C01_P13_Maximum_Of_Three () {}
 
     public static int findMaximOf3Integers(int first_int, int second_int, int third_int) {
-        if (first_int > second_int && first_int > third_int) {
-            return first_int;
-        } else if (second_int > first_int && second_int > third_int) {
-            return second_int;
-        } else {
-            return third_int;
+        int max = first_int;
+
+        if (second_int > max) {
+            max = second_int;
         }
+
+        if (third_int > max) {
+            max = third_int;
+        }
+
+        return max;
     }
 }
