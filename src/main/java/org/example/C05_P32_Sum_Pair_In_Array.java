@@ -8,6 +8,7 @@ package org.example;
  *******************************************************************************/
 
 public class C05_P32_Sum_Pair_In_Array {
+    private C05_P32_Sum_Pair_In_Array () {}
     public static String findPairValueSum(int[] array, int givenSum) {
         String result ="";
 

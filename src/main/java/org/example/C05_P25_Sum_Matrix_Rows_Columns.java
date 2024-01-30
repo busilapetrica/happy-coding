@@ -21,6 +21,7 @@ package org.example;
  12 14
  ********************************************/
 public class C05_P25_Sum_Matrix_Rows_Columns {
+    private C05_P25_Sum_Matrix_Rows_Columns () {}
     public static int[][] calculateRowsAndColumns(int[][] matrix) {
         int maxCols = 0;
         //verify maxim elements from each row and make the columns number

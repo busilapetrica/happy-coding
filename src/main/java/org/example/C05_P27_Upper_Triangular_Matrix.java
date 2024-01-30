@@ -27,6 +27,7 @@ package org.example;
  7 8 9
  *******************************************************************************/
 public class C05_P27_Upper_Triangular_Matrix {
+    private C05_P27_Upper_Triangular_Matrix () {}
     public static int[][] triangular0UpRightMatrix(int[][] matrix) {
         int size = matrix.length;
         int[][] triangularArray = new int[size][size];

@@ -9,6 +9,7 @@ package org.example;
  12 14 18 20 22 25 27 0 3 6 9
  *******************************************************************************/
 public class C05_P39_Rotate_Elements_Array {
+    private C05_P39_Rotate_Elements_Array () {}
     public static int[] rotateArray(int[] array, int rotatePosition) {
         int[] arrayRotated = new int[array.length];
 
