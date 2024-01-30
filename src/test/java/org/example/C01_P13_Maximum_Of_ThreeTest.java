@@ -7,18 +7,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class C01_P13_Maximum_Of_ThreeTest {
     @Test
     public void returnMaximumOfThreeIntegersWhenFistIsBigger() {
-        int result = C01_P13_Maximum_Of_Three.findMaximOf3Integers(7,6,5);
-        assertEquals(7 , result);
+        int result = C01_P13_Maximum_Of_Three.findMaximOf3Integers(5,3,1);
+        assertEquals(5 , result);
     }
     @Test
     public void returnMaximumOfThreeIntegersWhenSecondIsBigger() {
-        int result = C01_P13_Maximum_Of_Three.findMaximOf3Integers(6,7,5);
+        int result = C01_P13_Maximum_Of_Three.findMaximOf3Integers(3,7,2);
         assertEquals(7 , result);
     }
     @Test
     public void returnMaximumOfThreeIntegersWhenThirdIsBigger() {
-        int result = C01_P13_Maximum_Of_Three.findMaximOf3Integers(5,6,7);
-        assertEquals(7 , result);
+        int result = C01_P13_Maximum_Of_Three.findMaximOf3Integers(4,6,9);
+        assertEquals(9 , result);
     }
 
 }
