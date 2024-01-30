@@ -39,11 +39,6 @@ public class C05_P13_Add_New_Element_To_Array {
                 break;
             }
         }
-        
-        if (newIndex < newArray.length) {
-            newArray[newIndex] = newElement;
-        }
-
         return newArray;
     }
 }
