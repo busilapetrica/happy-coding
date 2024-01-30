@@ -25,4 +25,12 @@ class C05_P24_Sum_Diagonal_MatrixTest {
         int result = C05_P24_Sum_Left_Diagonal_Matrix.sumLeftDiagonal(array);
         assertEquals(15, result);
     }
+    
+    @Test
+    public void testSumDiagonalLeftEmptyMatrix() {
+        int[][] array = new int[][]{{}};
+
+        int result = C05_P24_Sum_Left_Diagonal_Matrix.sumLeftDiagonal(array);
+        assertEquals(0, result);
+    }
 }
