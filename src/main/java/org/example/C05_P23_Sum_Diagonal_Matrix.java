@@ -15,12 +15,12 @@ package org.example;
 public class C05_P23_Sum_Diagonal_Matrix {
     private C05_P23_Sum_Diagonal_Matrix () {}
 
-    public static int diagonalMatrixSum(int[][] array) {
-        int size = array.length;
+    public static int diagonalMatrixSum(int[][] matrix) {
+        int size = matrix.length;
         int sum = 0;
         for (int i = 0; i < size; i++) {
-            if (i < array[i].length) {
-                sum += array[i][i];
+            if (i < matrix[i].length) {
+                sum += matrix[i][i];
             }else{
                 sum +=0;
             }

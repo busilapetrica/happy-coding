@@ -31,14 +31,14 @@ The Addition of two matrix is :
 public class C05_P19_Additional_Of_2_Matrix{
     private C05_P19_Additional_Of_2_Matrix() {}
 
-public static int[][] calculateAdditionalMatrix(int[][]... arrays) {
+public static int[][] calculateAdditionalMatrix(int[][]... matrix) {
 
-    int size = arrays.length;
+    int size = matrix.length;
      int countArrays = 0;
     int countElements = 0; 
    
     for (int i = 0; i < size; i++) {
-        int[][] array = arrays[i];
+        int[][] array = matrix[i];
         if (array.length > countArrays) {
             countArrays = array.length;
         }
@@ -57,8 +57,8 @@ public static int[][] calculateAdditionalMatrix(int[][]... arrays) {
             aditionalArray[i][j] = 0;
 
             for (int k = 0; k < size; k++) {
-                if (i < arrays[k].length && j < arrays[k][i].length) {
-                    aditionalArray[i][j] += arrays[k][i][j];
+                if (i < matrix[k].length && j < matrix[k][i].length) {
+                    aditionalArray[i][j] += matrix[k][i][j];
                 }
             }
         }

@@ -17,13 +17,13 @@ package org.example;
 public class C05_P24_Sum_Left_Diagonal_Matrix {
     private C05_P24_Sum_Left_Diagonal_Matrix () {}
 
-        public static int sumLeftDiagonal(int[][] array) {
-            int size = array.length;
+        public static int sumLeftDiagonal(int[][] matrix) {
+            int size = matrix.length;
             int sum = 0;
 
             for(int i = size - 1; i >= 0; --i) {
-                if (i < array[i].length) {
-                    sum += array[i][i];
+                if (i < matrix[i].length) {
+                    sum += matrix[i][i];
                 }
             }
             return sum;

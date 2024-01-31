@@ -20,20 +20,20 @@ The transpose of a matrix is :
 public class C05_P22_Transpose_Matrix {
     private C05_P22_Transpose_Matrix () {}
 
-    public static int[][] transposeMatrix(int[][] array) {
-    int rows = array.length;
+    public static int[][] transposeMatrix(int[][] matrix) {
+    int rows = matrix.length;
     int cols = 0;
 
     for (int i = 0; i < rows; i++) {
-        if (array[i].length > cols) {
-            cols = array[i].length;
+        if (matrix[i].length > cols) {
+            cols = matrix[i].length;
         }
     }
 
     int[][] transposeMatrix = new int[cols][rows];
     for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < array[i].length; j++) {
-            transposeMatrix[j][i] = array[i][j];
+        for (int j = 0; j < matrix[i].length; j++) {
+            transposeMatrix[j][i] = matrix[i][j];
         }
     }
     return transposeMatrix;

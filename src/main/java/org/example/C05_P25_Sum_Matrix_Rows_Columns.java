@@ -33,7 +33,7 @@ public class C05_P25_Sum_Matrix_Rows_Columns {
             }
         }
         //make the new array with 2 arrays and columns
-        int[][] arraySum = new int[2][maxCols];
+        int[][] arraySumMatrix = new int[2][maxCols];
         //calculate the sum off each array
         for (int i = 0; i < matrix.length; i++) {
             int rowSum = 0;
@@ -41,7 +41,7 @@ public class C05_P25_Sum_Matrix_Rows_Columns {
                 if (j < matrix[i].length) {
                     rowSum += matrix[i][j];
                 }
-                arraySum[0][i] = rowSum;
+                arraySumMatrix[0][i] = rowSum;
             }
         }
         //calculate every column from each array
@@ -51,10 +51,10 @@ public class C05_P25_Sum_Matrix_Rows_Columns {
                 if (j < matrix[i].length) {
                     colSum += matrix[i][j];
                 }
-                arraySum[1][j] = colSum;
+                arraySumMatrix[1][j] = colSum;
             }
         }
 
-        return arraySum;
+        return arraySumMatrix;
     }
 }

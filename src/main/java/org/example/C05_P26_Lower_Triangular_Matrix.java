@@ -30,17 +30,17 @@ public class C05_P26_Lower_Triangular_Matrix {
  private C05_P26_Lower_Triangular_Matrix () {}
  
     public static int[][] triangularMatrix(int[][] matrix) {
-        int[][] triangularArray = new int[3][3];
+        int[][] triangularMatrix = new int[3][3];
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (j < i) {
-                    triangularArray[i][j] = 0;
+                    triangularMatrix[i][j] = 0;
                 } else {
-                    triangularArray[i][j] = matrix[i][j];
+                    triangularMatrix[i][j] = matrix[i][j];
                 }
             }
         }
-        return triangularArray;
+        return triangularMatrix;
     }
 }
