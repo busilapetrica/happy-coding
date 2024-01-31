@@ -19,26 +19,31 @@ package org.example;
  2 5 7 8 9 11
  */
 public class C05_P13_Add_New_Element_To_Array {
-    private C05_P13_Add_New_Element_To_Array () {}
+    private C05_P13_Add_New_Element_To_Array() {
+    }
 
-    public static int[] addElementToArray(int[] array, int newElement){
-        int[] newArray = new int[array.length + 1];
+    public static int[] addElementToArray(int[] array, int newElement) {
 
-        int newIndex = 0;
+        if (array.length == 0) {
+            int[] newArray = new int[1];
+            newArray[0] = newElement;
+            return newArray;
+        } else {
+            int[] newArray = new int[array.length + 1];
+            int newIndex = 0;
+            boolean inserted = false;
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] < newElement) {
-                newArray[newIndex++] = array[i];
-            } else {
-                // Always add the new element after any equal or greater elements
-                newArray[newIndex++] = newElement;
-                // Copy the remaining elements
-                while (i < array.length) {
-                    newArray[newIndex++] = array[i++];
+            for (int i = 0; i < array.length; i++) {
+                if (!inserted && array[i] >= newElement) {
+                    newArray[newIndex++] = newElement;
+                    inserted = true;
                 }
-                break;
+                newArray[newIndex++] = array[i];
             }
+            if (!inserted) {
+                newArray[newIndex] = newElement;
+            }
+            return newArray;
         }
-        return newArray;
     }
 }
