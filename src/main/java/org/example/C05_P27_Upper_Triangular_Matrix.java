@@ -30,18 +30,18 @@ public class C05_P27_Upper_Triangular_Matrix {
     private C05_P27_Upper_Triangular_Matrix () {}
     public static int[][] triangular0UpRightMatrix(int[][] matrix) {
         int size = matrix.length;
-        int[][] triangularArray = new int[size][size];
+        int[][] triangularMatrix = new int[size][size];
 
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (j > i) {
-                    triangularArray[i][j] = 0;
+                    triangularMatrix[i][j] = 0;
                 } else {
-                    triangularArray[i][j] = matrix[i][j];
+                    triangularMatrix[i][j] = matrix[i][j];
                 }
             }
         }
-        return triangularArray;
+        return triangularMatrix;
     }
 }
 
