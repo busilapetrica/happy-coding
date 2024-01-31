@@ -27,9 +27,9 @@ package org.example;
  0 0 9
  *************************************/
 public class C05_P26_Lower_Triangular_Matrix {
+ private C05_P26_Lower_Triangular_Matrix () {}
+ 
     public static int[][] triangularMatrix(int[][] matrix) {
-
-
         int[][] triangularArray = new int[3][3];
 
         for (int i = 0; i < 3; i++) {
@@ -41,7 +41,6 @@ public class C05_P26_Lower_Triangular_Matrix {
                 }
             }
         }
-
         return triangularArray;
     }
 }
