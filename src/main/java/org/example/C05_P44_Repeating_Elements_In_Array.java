@@ -1,10 +1,10 @@
 package org.example;
 import java.util.Arrays;
 /******************************************************************************
- 44.Write a program in java to find the two repeating elements in a given array.
+ Write a program in java to find the two repeating elements in a given array.
  Expected Output :
  The given array is : 2 7 4 7 8 3 4
- The repeating elements are: 7 0
+ The repeating elements are: 4 7
  *******************************************************************************/
 public class C05_P44_Repeating_Elements_In_Array {
     private C05_P44_Repeating_Elements_In_Array () {}
