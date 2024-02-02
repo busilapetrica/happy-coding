@@ -27,7 +27,7 @@ package org.example;
 public class C05_P30_Matrix_Equals {
     private C05_P30_Matrix_Equals() {}
 
-    public static boolean checkEgualMatrix(int[][] matrix1, int[][] matrix2){
+    public static boolean checkEqualMatrix(int[][] matrix1, int[][] matrix2){
         boolean matrixEqual = true;
 
         for(int i = 0; i < matrix1.length; i++){

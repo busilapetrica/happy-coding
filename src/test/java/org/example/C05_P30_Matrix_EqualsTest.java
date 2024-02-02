@@ -10,7 +10,7 @@ class C05_P30_Matrix_EqualsTest {
         int[][] matrix1 = new int[][]{{1,3},{3,4}};
         int[][] matrix2 = new int[][]{{1,2},{3,4}};
 
-        boolean result = C05_P30_Matrix_Equals.checkEgualMatrix(matrix1, matrix2);
+        boolean result = C05_P30_Matrix_Equals.checkEqualMatrix(matrix1, matrix2);
         assertEquals(false, result);
     }
 
@@ -19,7 +19,7 @@ class C05_P30_Matrix_EqualsTest {
         int[][] matrix1 = new int[][]{{1,2},{3,4}};
         int[][] matrix2 = new int[][]{{1,2},{3,4}};
 
-        boolean result = C05_P30_Matrix_Equals.checkEgualMatrix(matrix1, matrix2);
+        boolean result = C05_P30_Matrix_Equals.checkEqualMatrix(matrix1, matrix2);
         assertEquals(true, result);
     }
 
