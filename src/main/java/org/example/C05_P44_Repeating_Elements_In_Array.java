@@ -1,5 +1,5 @@
 package org.example;
-import java.util.Arrays;
+
 /******************************************************************************
  Write a program in java to find the two repeating elements in a given array.
  Expected Output :
@@ -7,21 +7,38 @@ import java.util.Arrays;
  The repeating elements are: 4 7
  *******************************************************************************/
 public class C05_P44_Repeating_Elements_In_Array {
-    private C05_P44_Repeating_Elements_In_Array () {}
-    public static String findAndPrintRepeatingElements(int[] array) {
-        Arrays.sort(array);
+    private C05_P44_Repeating_Elements_In_Array() {
+    }
+    public static int[] findAndPrintRepeatingElements(int[] array) {
+        int[] arrayRepeatingElements = new int[array.length];
+        int index = 0;
 
-        boolean foundFirst = false;
-        String result = "";
+        for (int i = 0; i < array.length; i++) {
+            boolean alreadyExists = false;
 
-        for (int i = 0; i < array.length - 1; i++) {
-            if (array[i] == array[i + 1]) {
-                if (!foundFirst || array[i] != array[i - 1]) {
-                    result +=array[i] + " ";
-                    foundFirst = true;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    //check if element exist in arrayRepeatingElements
+                    for (int k = 0; k < arrayRepeatingElements.length; k++) {
+                        if (array[i] == arrayRepeatingElements[k]) {
+                            alreadyExists = true;
+                        }
+                    }
+
+                    //if element not exist add to arrayRepeatingEmenets
+                    if (!alreadyExists) {
+                        arrayRepeatingElements[index++] = array[i];
+                    }
                 }
             }
         }
-        return result;
+        //copy just repeating element to a new arrayResult
+        int[] resultArray = new int[index];
+        for (int l = 0; l < index; l++) {
+            resultArray[l] = arrayRepeatingElements[l];
+        }
+
+        return resultArray;
     }
 }
+
