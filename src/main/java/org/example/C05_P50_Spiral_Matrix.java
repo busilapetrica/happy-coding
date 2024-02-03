@@ -1,4 +1,5 @@
 package org.example;
+
 /******************************************************************************
  50.Write a program in java to print a matrix in spiral form.
  Expected Output :
@@ -11,16 +12,26 @@ package org.example;
  1 2 3 4 5 10 15 20 19 18 17 16 11 6 7 8 9 14 13 12
  *******************************************************************************/
 public class C05_P50_Spiral_Matrix {
-    private C05_P50_Spiral_Matrix () {}
-    public static String makeArraySpiral(int[][] matrix){
-        int n=4;
-        int direction =0; // 1- left - > right,
+    private C05_P50_Spiral_Matrix() {
+    }
+
+    public static String makeArraySpiral(int[][] matrix) {
+        //count rows and columns of matrix
+        int column = matrix.length;
+        int rows = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            if(matrix[i].length > rows){
+                rows = matrix[i].length-1;
+            }
+        }
+
+        int direction = 0; // 1- left - > right,
         // 2 - up -> down,
         // 3 - right -> left
         // 4 - down - > up
 
-        int top =0, bottom = n-1, right = n, left = 0;
-        String result= "";
+        int top = 0, bottom = rows - 1, right = column, left = 0;
+        String result = "";
 
         while (top <= bottom && left <= right) {
             if (direction == 0) {
@@ -34,14 +45,14 @@ public class C05_P50_Spiral_Matrix {
                 right--;
 
             } else if (direction == 2) {
-                for(int i=right; i>=left; i--) {
+                for (int i = right; i >= left; i--) {
                     result += matrix[bottom][i] + " ";
                 }
                 bottom--;
 
-            } else if(direction == 3) {
-                for(int i=bottom; i>=top; i--) {
-                    result += matrix[i][left]+ " ";
+            } else if (direction == 3) {
+                for (int i = bottom; i >= top; i--) {
+                    result += matrix[i][left] + " ";
                 }
                 left++;
             }
