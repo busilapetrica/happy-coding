@@ -16,14 +16,15 @@ public class C05_P50_Spiral_Matrix {
     }
 
     public static String makeArraySpiral(int[][] matrix) {
-        int count = matrix.length;
+        int rows = matrix.length;
+        int columns = matrix[0].length;
 
         int direction = 0; // 1- left - > right,
         // 2 - up -> down,
         // 3 - right -> left
         // 4 - down - > up
 
-        int top = 0, bottom = count - 1, right = count, left = 0;
+        int top = 0, bottom = rows - 1, right = columns-1, left = 0;
         String result = "";
 
         while (top <= bottom && left <= right) {
