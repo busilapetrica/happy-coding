@@ -15,10 +15,10 @@ public class C06_P02_Sum_Of_Range_Numbers {
     public static int sumOfRange(int number) {
         int result;
         if (number == 1) {
-            return (1);
+            return 1;
         } else {
             result = number + sumOfRange(number - 1);
         }
-        return (result);
+        return result;
     }
 }
