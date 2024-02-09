@@ -12,6 +12,8 @@ class P02_Mine_Fields_BombTest {
                                 {1, 2}};
 
         String[][] result = P02_Mine_Fields_Bomb.mineField(matrix,minePositions);
-        assertArrayEquals(new String[][]{{"*","2","1","1"}, {"1","2","*","1"},{"0","1","1","1"}}, result);
+        assertArrayEquals(new String[][]{{"*","2","1","1"},
+                                         {"1","2","*","1"},
+                                         {"0","1","1","1"}}, result);
     }
 }

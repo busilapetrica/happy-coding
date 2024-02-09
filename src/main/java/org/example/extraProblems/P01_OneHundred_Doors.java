@@ -15,11 +15,7 @@ public class P01_OneHundred_Doors {
     }
     public static boolean[] getDoorsState(boolean[] array) {
 
-       for (int i = 0; i < array.length; i++) {
-          array[i] = true;
-      }
-
-        for (int i = 2; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             for (int j = i-1; j < array.length; j += i) {
                 array[j] = !array[j];
             }
