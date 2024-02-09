@@ -9,7 +9,7 @@ package org.example;
  15
  *****************************************/
 public class C06_P02_Sum_Of_Range_Numbers {
-    public C06_P02_Sum_Of_Range_Numbers() {
+    private C06_P02_Sum_Of_Range_Numbers() {
     }
 
     public static int sumOfRange(int number) {

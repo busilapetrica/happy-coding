@@ -10,7 +10,7 @@ package org.example;
  b) To swap two elements
  ***************************************/
 public class C07_01_Sorting_Selection_Algorithm {
-    public C07_01_Sorting_Selection_Algorithm() {}
+    private C07_01_Sorting_Selection_Algorithm() {}
 
     public static int[] sorting(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {

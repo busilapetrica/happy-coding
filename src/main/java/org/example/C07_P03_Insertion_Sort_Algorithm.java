@@ -7,7 +7,7 @@ package org.example;
  */
 public class C07_P03_Insertion_Sort_Algorithm {
 
-    public C07_P03_Insertion_Sort_Algorithm() {
+    private C07_P03_Insertion_Sort_Algorithm() {
     }
 
     public static int[] sortArray(int[] array) {

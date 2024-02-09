@@ -12,7 +12,7 @@ package org.example;
  48  49  50
  *********************************************/
 public class C06_P01_Print_First_50_Natural_Numbers {
-    public C06_P01_Print_First_50_Natural_Numbers() {
+    private C06_P01_Print_First_50_Natural_Numbers() {
     }
 
     public static String print50NaturalNumbers(int startNumber) {

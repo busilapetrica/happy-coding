@@ -12,7 +12,7 @@ package org.example;
  F(n)=F(n−1)+F(n−2)
  **************************************************/
 public class C06_P03_Fibonacci_Series {
-    public C06_P03_Fibonacci_Series() {
+    private C06_P03_Fibonacci_Series() {
     }
     static String fibonacciStringConstruct(int fibNumberLength) {
         String result = "";

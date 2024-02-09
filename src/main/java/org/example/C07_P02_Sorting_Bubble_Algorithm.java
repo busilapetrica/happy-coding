@@ -2,6 +2,9 @@ package org.example;
 
 public class C07_P02_Sorting_Bubble_Algorithm {
 
+    private C07_P02_Sorting_Bubble_Algorithm() {
+    }
+
     public static int[] sorting(int[] array){
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {

@@ -7,7 +7,7 @@ package org.example;
  The Factorial of 5 is : 120
  *******************************************/
 public class C06_P10_Factorial_Number {
-    public C06_P10_Factorial_Number() {
+    private C06_P10_Factorial_Number() {
     }
     public static int findFactorial(int number) {
             if(number==1)
