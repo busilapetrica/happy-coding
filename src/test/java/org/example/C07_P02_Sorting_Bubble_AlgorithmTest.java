@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c03arrays.sort.C07_P02_Sorting_Bubble_Algorithm;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

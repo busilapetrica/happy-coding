@@ -1,5 +1,6 @@
 package org.example.extraProblems;
 
+import org.example.c06challenges.P02_Mine_Fields_Bomb;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c03arrays.C05_P39_Rotate_Elements_Array;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

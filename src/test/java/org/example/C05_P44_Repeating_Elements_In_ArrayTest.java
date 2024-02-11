@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c03arrays.C05_P44_Repeating_Elements_In_Array;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

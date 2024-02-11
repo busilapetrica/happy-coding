@@ -1,6 +1,6 @@
 package org.example;
 
-import org.junit.jupiter.api.Assertions;
+import org.example.c04matrices.C05_P25_Sum_Matrix_Rows_Columns;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

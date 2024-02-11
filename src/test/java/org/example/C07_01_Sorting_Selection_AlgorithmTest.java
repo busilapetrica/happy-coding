@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c03arrays.sort.C07_01_Sorting_Selection_Algorithm;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

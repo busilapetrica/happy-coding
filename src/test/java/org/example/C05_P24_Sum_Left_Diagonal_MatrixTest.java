@@ -1,4 +1,5 @@
 package org.example;
+import org.example.c04matrices.C05_P24_Sum_Left_Diagonal_Matrix;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

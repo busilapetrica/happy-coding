@@ -1,8 +1,7 @@
 package org.example;
 
+import org.example.c03arrays.C05_P10_Odd_And_Even_Numbers;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
