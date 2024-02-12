@@ -3,6 +3,7 @@ package org.example.c03arrays;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.example.c03arrays.transform.C05_P01_Display_Array_Elements;
 import org.junit.jupiter.api.Test;
 
 class DisplayArrayElementsTest {

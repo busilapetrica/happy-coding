@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c02controlFlow.validate.C04_P36_Check_Password;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

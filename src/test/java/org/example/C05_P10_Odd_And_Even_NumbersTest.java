@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.c03arrays.C05_P10_Odd_And_Even_Numbers;
+import org.example.c03arrays.search.C05_P10_Odd_And_Even_Numbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

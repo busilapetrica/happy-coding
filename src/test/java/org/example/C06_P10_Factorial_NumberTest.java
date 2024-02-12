@@ -1,4 +1,5 @@
 package org.example;
+import org.example.c02controlFlow.calculate.C06_P10_Factorial_Number;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

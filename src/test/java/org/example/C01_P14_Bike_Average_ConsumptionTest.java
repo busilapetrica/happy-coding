@@ -1,4 +1,5 @@
 package org.example;
+import org.example.c02controlFlow.calculate.C01_P14_Bike_Average_Consumption;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

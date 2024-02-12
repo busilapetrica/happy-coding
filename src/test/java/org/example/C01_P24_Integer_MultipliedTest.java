@@ -1,4 +1,5 @@
 package org.example;
+import org.example.c02controlFlow.calculate.C01_P24_Integer_Multiplied;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

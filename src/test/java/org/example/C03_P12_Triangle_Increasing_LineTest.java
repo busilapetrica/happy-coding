@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c02controlFlow.validate.C03_P12_Triangle_Increasing_Line;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

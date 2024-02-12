@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c04matrices.C05_P30_Matrix_Equals;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

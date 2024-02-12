@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c02controlFlow.validate.C03_P13_Consecutive_Pyramid_Number;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

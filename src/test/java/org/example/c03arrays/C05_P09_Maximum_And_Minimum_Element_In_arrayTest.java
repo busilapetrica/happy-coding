@@ -1,5 +1,6 @@
 package org.example.c03arrays;
 
+import org.example.c03arrays.search.C05_P09_Maximum_And_Minimum_Elements_In_Array;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

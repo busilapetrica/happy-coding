@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c02controlFlow.validate.C03_P17_Repeat_Pyramid_Numbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c02controlFlow.validate.C01_P07_Display_Multiple_Variables;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

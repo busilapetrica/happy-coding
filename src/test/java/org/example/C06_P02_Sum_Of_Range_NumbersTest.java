@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c05recursion.C06_P02_Sum_Of_Range_Numbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

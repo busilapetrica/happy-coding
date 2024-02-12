@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.c03arrays.C05_P16_Second_Largest_Number_In_Array;
+import org.example.c03arrays.search.C05_P16_Second_Largest_Number_In_Array;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

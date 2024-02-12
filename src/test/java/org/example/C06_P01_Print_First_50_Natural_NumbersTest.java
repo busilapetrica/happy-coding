@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.c05recursion.C06_P01_Print_First_50_Natural_Numbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -25,28 +25,28 @@ package org.example.c04matrices;
 public class C05_P18_2DArray_Matrix {
     private C05_P18_2DArray_Matrix () {}
 
-public static int[][] pattern2DMatrix(int[]... matrix) {
-        //count maximum lenght of matrix
+public static int[][] pattern2DMatrix(int[]... array) {
+        //count maximum lenght of array
     int count = 0;
-    for (int i = 0; i < matrix.length; i++) {
-    int[] array = matrix[i];
-        if (array.length > count) {
-            count = array.length;
+    for (int i = 0; i < array.length; i++) {
+    int[] rows = array[i];
+        if (rows.length > count) {
+            count = rows.length;
         }
     }
-    //create a 2D matrix 
-    int[][] resultArray = new int[matrix.length][count];
-    //add elements to matrix
+    //create a 2D array
+    int[][] resultMatrix = new int[array.length][count];
+    //add elements to array
     // if the length of one array is to small  add "0"   
-    for (int i = 0; i < matrix.length; i++) {
+    for (int i = 0; i < array.length; i++) {
         for (int j = 0; j < count; j++) {
-            if (j < matrix[i].length) {
-                resultArray[i][j] = matrix[i][j];
+            if (j < array[i].length) {
+                resultMatrix[i][j] = array[i][j];
             } else {
-                resultArray[i][j] = 0;
+                resultMatrix[i][j] = 0;
             }
         }
     }
-    return resultArray;
+    return resultMatrix;
 }
 }

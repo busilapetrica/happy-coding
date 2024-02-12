@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.c03arrays.C05_P32_Sum_Pair_In_Array;
+import org.example.c03arrays.calculate.C05_P32_Sum_Pair_In_Array;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

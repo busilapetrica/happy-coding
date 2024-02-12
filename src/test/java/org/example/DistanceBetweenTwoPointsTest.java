@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.c01operators.DistanceBetweenTwoPoints;
+import org.example.c02controlFlow.calculate.DistanceBetweenTwoPoints;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
