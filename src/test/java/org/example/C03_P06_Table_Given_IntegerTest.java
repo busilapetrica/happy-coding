@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class C03_P06_Table_Given_IntegerTest {
     @Test
-    public void returnTableMultiplicationWith15() {
+     void returnTableMultiplicationWith15() {
         String result = C03_P06_Table_Given_Integer.displayMultiplicationTable(15);
         assertEquals("""
                 15X1=15

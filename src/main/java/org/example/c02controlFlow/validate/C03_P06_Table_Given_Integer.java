@@ -7,7 +7,7 @@ package org.example.c02controlFlow.validate;
 public class C03_P06_Table_Given_Integer {
     private C03_P06_Table_Given_Integer () {}
 
-    static String displayMultiplicationTable(int number) {
+    public static String displayMultiplicationTable(int number) {
         String result = "";
         for (int i = 1; i <= 10; i++) {
             result += number + "X" + i + "=" + i * number + "\n";

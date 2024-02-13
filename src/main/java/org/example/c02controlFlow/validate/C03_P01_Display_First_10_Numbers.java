@@ -7,7 +7,7 @@ package org.example.c02controlFlow.validate;
 public class C03_P01_Display_First_10_Numbers {
     private C03_P01_Display_First_10_Numbers () {}
 
-    static String loopTheNumbers(int number) {
+    public static String loopTheNumbers(int number) {
         String result = "";
         for(int i=1; i<=10; i++){
             result += i + " ";

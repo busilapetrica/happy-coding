@@ -14,7 +14,7 @@ package org.example.c02controlFlow.generate;
 public class C06_P03_Fibonacci_Series {
     private C06_P03_Fibonacci_Series() {
     }
-    static String fibonacciStringConstruct(int fibNumberLength) {
+    public static String fibonacciStringConstruct(int fibNumberLength) {
         String result = "";
 
         for (int i = 1; i <= fibNumberLength; i++) {
