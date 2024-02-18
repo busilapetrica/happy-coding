@@ -1,4 +1,4 @@
-package org.example.c02controlFlow.calculate;
+package org.example.c02controlFlow.validate;
 /******************************************************************************
  write a program the check of a positive number integer is divided by either 3 or 7, or both.
  If the integer is a multiple of 3, then program will return true.
@@ -13,11 +13,11 @@ package org.example.c02controlFlow.calculate;
 public class CheckIntegerIfAreDividedBy3or7orBoth {
     private CheckIntegerIfAreDividedBy3or7orBoth() {}
 
-    public static int checkNumber(int x){
+    public static boolean checkNumber(int x){
         if(x%3 == 0 || x%7 == 0 ){
-            return 1;
+            return true;
         }else{
-            return 0;
+            return false;
         }
     }
 }

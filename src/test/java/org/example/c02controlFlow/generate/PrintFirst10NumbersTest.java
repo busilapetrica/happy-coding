@@ -1,6 +1,6 @@
-package org.example.c02controlFlow.validate;
+package org.example.c02controlFlow.generate;
 
-import org.example.c02controlFlow.validate.PrintFirst10Numbers;
+import org.example.c02controlFlow.generate.PrintFirst10Numbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

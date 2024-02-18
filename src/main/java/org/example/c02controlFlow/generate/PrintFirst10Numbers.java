@@ -1,4 +1,4 @@
-package org.example.c02controlFlow.validate;
+package org.example.c02controlFlow.generate;
 /*****************************************************************************
  * C03_P01_Display_10_Numbers
  Write a program in java to display the first 10 numbers.

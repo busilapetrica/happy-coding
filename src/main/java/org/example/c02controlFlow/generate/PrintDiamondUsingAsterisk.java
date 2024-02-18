@@ -1,4 +1,4 @@
-package org.example.c02controlFlow.validate;
+package org.example.c02controlFlow.generate;
 
 /**************************************
  Write a java program to display  a pattern like diamond.

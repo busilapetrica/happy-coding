@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class DistanceBetweenTwoPointsTest {
     @Test
     void returnDistanceBetween2Points() {
-        String result = DistanceBetweenTwoPoints.calculateDistance(25, 35, 15, 10);
-        assertEquals("11.1803", result);
+        double result = DistanceBetweenTwoPoints.calculateDistance(25, 35, 15, 10);
+        assertEquals(11.1803, result);
     }
 
 }

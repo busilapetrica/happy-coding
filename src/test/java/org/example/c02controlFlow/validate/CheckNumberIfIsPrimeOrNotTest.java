@@ -1,6 +1,6 @@
-package org.example.c02controlFlow.calculate;
+package org.example.c02controlFlow.validate;
 
-import org.example.c02controlFlow.calculate.CheckNumberIfIsPrimeOrNot;
+import org.example.c02controlFlow.validate.CheckNumberIfIsPrimeOrNot;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 class CheckNumberIfIsPrimeOrNotTest {

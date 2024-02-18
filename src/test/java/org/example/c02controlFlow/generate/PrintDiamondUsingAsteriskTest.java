@@ -1,6 +1,6 @@
-package org.example.c02controlFlow.validate;
+package org.example.c02controlFlow.generate;
 
-import org.example.c02controlFlow.validate.PrintDiamondUsingAsterisk;
+import org.example.c02controlFlow.generate.PrintDiamondUsingAsterisk;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

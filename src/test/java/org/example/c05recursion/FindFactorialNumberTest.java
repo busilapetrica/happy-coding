@@ -1,5 +1,5 @@
-package org.example.c02controlFlow.calculate;
-import org.example.c02controlFlow.calculate.FindFactorialNumber;
+package org.example.c05recursion;
+import org.example.c05recursion.FindFactorialNumber;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,4 +1,4 @@
-package org.example.c02controlFlow.calculate;
+package org.example.c02controlFlow.validate;
 /*************************************************
  Write a java program to check whether a given number is a 'Perfect' number or not.
  Test Data :

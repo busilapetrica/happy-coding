@@ -1,6 +1,6 @@
-package org.example.c02controlFlow.validate;
+package org.example.c02controlFlow.calculate;
 
-import org.example.c02controlFlow.validate.DisplayMultipleVariables;
+import org.example.c01operators.DisplayMultipleVariables;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

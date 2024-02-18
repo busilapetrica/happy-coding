@@ -1,5 +1,5 @@
-package org.example.c02controlFlow.calculate;
-import org.example.c02controlFlow.calculate.CalculateBikeAverageConsumption;
+package org.example.c01operators;
+import org.example.c01operators.CalculateBikeAverageConsumption;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

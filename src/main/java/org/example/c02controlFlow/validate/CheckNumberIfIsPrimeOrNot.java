@@ -1,4 +1,4 @@
-package org.example.c02controlFlow.calculate;
+package org.example.c02controlFlow.validate;
 
 /***********************************
  Write a java program to determine whether a given number is prime or not.

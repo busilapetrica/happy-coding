@@ -1,4 +1,4 @@
-package org.example.c02controlFlow.validate;
+package org.example.c01operators;
 import java.math.BigInteger;
 /************************************************
  Write a java program to display multiple variables.

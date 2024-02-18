@@ -1,4 +1,4 @@
-package org.example.c02controlFlow.calculate;
+package org.example.c05recursion;
 /********************************************
  Write a program in java to find the Factorial of a number using recursion. >
  Test Data :

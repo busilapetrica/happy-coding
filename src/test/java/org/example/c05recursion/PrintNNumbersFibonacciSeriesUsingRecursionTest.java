@@ -1,6 +1,6 @@
-package org.example.c02controlFlow.generate;
+package org.example.c05recursion;
 
-import org.example.c02controlFlow.generate.PrintNNumbersFibonacciSeriesUsingRecursion;
+import org.example.c05recursion.PrintNNumbersFibonacciSeriesUsingRecursion;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
