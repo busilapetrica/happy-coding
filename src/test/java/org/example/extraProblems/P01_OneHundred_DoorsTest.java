@@ -1,6 +1,6 @@
 package org.example.extraProblems;
 
-import org.example.C05_P25_Sum_Matrix_Rows_Columns;
+import org.example.c06challenges.P01_OneHundred_Doors;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
