@@ -1,4 +1,4 @@
-package org.example.extraProblems;
+package org.example.c06challenges;
 
 import org.example.c06challenges.P01_OneHundred_Doors;
 import org.junit.jupiter.api.Test;
