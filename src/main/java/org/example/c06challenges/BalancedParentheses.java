@@ -13,32 +13,28 @@ package org.example.c06challenges;
 public class BalancedParentheses {
     public BalancedParentheses() {
     }
-    public static boolean balancedParentheses(String balancedString) {
-        int wordLength = balancedString.length();
-        int squareBrackets = 0;
-        int roundbrakets = 0;
-        int curlyBracket = 0;
-        boolean balanced = false;
 
-        for (int i = 0; i < wordLength; i++) {
-            char parentheses = balancedString.charAt(i);
+    public static boolean balancedParentheses(String string) {
+        char[] charArray = string.toCharArray();
+        char[] bracketStack = new char[charArray.length];
+        int count = 0;
 
-            if (parentheses == '(' || parentheses == '[' || parentheses == '{') {
-                squareBrackets++;
-                roundbrakets++;
-                curlyBracket++;
-                balanced = true;
+        for (int i = 0; i < charArray.length; i++) {
+            char parentheses = charArray[i];
 
-            } else if (parentheses == ')' || parentheses == ']' || parentheses == '}') {
-                squareBrackets--;
-                roundbrakets--;
-                curlyBracket--;
+            if (parentheses == '(' || parentheses == '{' || parentheses == '[') {
+                bracketStack[count++] = parentheses;
+            } else {
+
+                if (count == 0 ||
+                        (bracketStack[count - 1] == '(' && parentheses != ')') ||
+                        (bracketStack[count - 1] == '{' && parentheses != '}') ||
+                        (bracketStack[count - 1] == '[' && parentheses != ']')) {
+                    return false;
+                }
+                count--;
             }
-
-
-
         }
-
-        return balanced;
+        return count == 0;
     }
 }
