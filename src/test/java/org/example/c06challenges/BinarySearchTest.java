@@ -21,7 +21,7 @@ class BinarySearchTest {
     @Test
     void returnIndexOfElementFoundInArrayOfNumber11() {
         int[] array = {11, 12, 13, 14, 15};
-        int result = BinarySearch.binarySearch(array,1);
-        assertEquals(-1, result);
+        int result = BinarySearch.binarySearch(array,11);
+        assertEquals(0, result);
     }
 }

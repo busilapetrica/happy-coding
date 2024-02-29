@@ -1,6 +1,7 @@
 package org.example.c06challenges;
 
 public class BinarySearch {
+    private BinarySearch() {}
     public static int binarySearch(int[] array, int searchedNumber) {
         int low = 0;
         int high = array.length - 1;

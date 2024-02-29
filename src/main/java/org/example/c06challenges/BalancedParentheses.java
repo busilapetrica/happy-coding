@@ -11,7 +11,7 @@ package org.example.c06challenges;
  {()}[[{}]] is balanced
  *****************************************/
 public class BalancedParentheses {
-    public BalancedParentheses() {
+    private BalancedParentheses() {
     }
 
     public static boolean balancedParentheses(String string) {
