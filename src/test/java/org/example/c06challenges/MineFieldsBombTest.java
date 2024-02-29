@@ -1,13 +1,12 @@
-package org.example.extraProblems;
+package org.example.c06challenges;
 
-import org.example.c06challenges.P02_Mine_Fields_Bomb;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class P02_Mine_Fields_BombTest {
+class MineFieldsBombTest {
     @Test
-    public void return3x4MatrixMineFieldWith2FieldsBomb() {
+     void return3x4MatrixMineFieldWith2FieldsBomb() {
         String[][] matrix = new String[3][4];
         int[][] minePositions = {{0, 0},
                                 {1, 2}};
