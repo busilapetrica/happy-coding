@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class POneHundredDoorsTest {
+class OneHundredDoorsTest {
 
     @Test
      void returnStateOf100doorsAfterToggleIncrementalMinusOne() {

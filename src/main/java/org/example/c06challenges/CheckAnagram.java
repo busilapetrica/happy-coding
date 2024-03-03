@@ -14,23 +14,23 @@ public class CheckAnagram {
     }
 
     public static boolean areAnagrams(String firstString, String secondString) {
-        int[] firstCharCount = new int[256];
-        int[] secondCharCount = new int[256];
+        int[] firstStringCharFrequency = new int[256];
+        int[] secondStringCharFrequency  = new int[256];
 
         if (firstString.length() != secondString.length()) {
             return false;
         }
 
         for (int i = 0; i < firstString.length(); i++) {
-            firstCharCount[firstString.charAt(i)]++;
+            firstStringCharFrequency[firstString.charAt(i)]++;
         }
 
         for (int i = 0; i < secondString.length(); i++) {
-            secondCharCount[secondString.charAt(i)]++;
+            secondStringCharFrequency [secondString.charAt(i)]++;
         }
 
         for (int i = 0; i < 256; i++) {
-            if (firstCharCount[i] != secondCharCount[i]) {
+            if (firstStringCharFrequency[i] != secondStringCharFrequency [i]) {
                 return false;
             }
         }

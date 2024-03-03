@@ -11,7 +11,7 @@ package org.example.c06challenges;
  *  Which are open, which are closed?
  *  *******************************************************************************/
 public class OneHundredDoors {
-    public OneHundredDoors() {
+    private OneHundredDoors() {
     }
     public static boolean[] getDoorsState(boolean[] array) {
 
