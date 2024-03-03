@@ -10,8 +10,8 @@ package org.example.c06challenges;
  *  Question: What state are the doors in after the last pass?
  *  Which are open, which are closed?
  *  *******************************************************************************/
-public class P01_OneHundred_Doors {
-    public P01_OneHundred_Doors() {
+public class OneHundredDoors {
+    public OneHundredDoors() {
     }
     public static boolean[] getDoorsState(boolean[] array) {
 
