@@ -36,10 +36,4 @@ public class RepeatingCharactersInASubstring {
         }
         return longestSubstring;
     }
-
-    public static void main(String[] args) {
-        String str = "xyzxyzyy";
-        System.out.println("Original String: " + str);
-        System.out.println("The longest substring without repeating characters: " + longestSubstring(str));
-    }
 }
