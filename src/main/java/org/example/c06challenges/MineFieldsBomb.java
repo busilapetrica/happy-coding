@@ -16,8 +16,8 @@ package org.example.c06challenges;
  12*1
  0111
  *******************************************************************************/
-public class P02_Mine_Fields_Bomb {
-    public P02_Mine_Fields_Bomb() {
+public class MineFieldsBomb {
+    public MineFieldsBomb() {
     }
     public static String[][] mineField(String[][] matrix, int[][] minePositions) {
 
