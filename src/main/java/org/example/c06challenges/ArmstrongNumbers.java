@@ -7,26 +7,20 @@ package org.example.c06challenges;
 
  ************************************/
 public class ArmstrongNumbers {
-    public static void main(String[] args) {
-        int number = 153;
-        boolean result = checkArmstrongNumber(number);
-        System.out.println(result);
+
+    private ArmstrongNumbers() {
     }
 
     public static boolean checkArmstrongNumber(int number) {
-        int lengthnumber = 0;
-        boolean armstrongNumber = true;
-        int sum = 0;
-        while (number != 0) {
-            lengthnumber++;
-            number /= 10;
-        }
+        int originalNumber = number;
+        int remainder, result = 0;
 
-        for (int i = 0; i <= number; i++) {
-            for (int j = 0; j <= lengthnumber; j++) {
-
-            }
+        while (originalNumber != 0) {
+            remainder = originalNumber % 10;
+            result += remainder * remainder * remainder;
+            originalNumber /= 10;
         }
-        return true;
+        return result == number;
     }
+
 }
