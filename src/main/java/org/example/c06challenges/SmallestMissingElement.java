@@ -12,26 +12,30 @@ public class SmallestMissingElement {
     }
 
     public static int findSmallestMissingElement(int[] array) {
-        int elementMissing = 0;
+        int elementMissing;
 
+        if (array.length == 0) {
+            elementMissing = 0;
+        } else {
 
-        for (int i = 0; i < array.length - 1; i++) {
-            for (int j = 0; j < array.length - i - 1; j++) {
+            for (int i = 0; i < array.length - 1; i++) {
+                for (int j = 0; j < array.length - i - 1; j++) {
 
-                if (array[j] > array[j + 1]) {
-                    int temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
+                    if (array[j] > array[j + 1]) {
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
                 }
             }
-        }
 
-        for (int i = 0; i < array.length; i++) {
-            if (elementMissing != array[i]) {
-                return elementMissing;
-            } else {
-
-                elementMissing++;
+            elementMissing = 1;
+            for (int i = 0; i < array.length; i++) {
+                if (elementMissing != array[i]) {
+                    return elementMissing;
+                } else {
+                    elementMissing++;
+                }
             }
         }
 

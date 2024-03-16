@@ -18,18 +18,24 @@ public class CheckNumbersOfZeros {
     private CheckNumbersOfZeros() {
     }
 
-    public static int checkNumbersOfZeros(int[][] matrix) {
-        int sizeMatrix = matrix.length;
+    public static boolean checkNumbersOfZeros(int[][] matrix) {
+        int countRows = matrix.length;
+        int countColumns = matrix[0].length;
+        boolean sparseMatrix = true;
         int count = 0;
 
-        for (int i = 0; i < sizeMatrix; i++) {
+        for (int i = 0; i < countRows; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-
                 if (matrix[i][j] == 0) {
                     count++;
                 }
             }
         }
-        return count;
+
+        if (count >= countRows * countColumns / 2) {
+            sparseMatrix = false;
+        }
+
+        return sparseMatrix;
     }
 }

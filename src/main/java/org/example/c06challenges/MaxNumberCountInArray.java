@@ -10,7 +10,7 @@ public class MaxNumberCountInArray {
         int maxFreqNumber = -1;
 
         if (arrayLength == 0) {
-            return -2;
+            return 0;
         } else {
 
             for (int i = 0; i < arrayLength; i++) {
@@ -24,10 +24,6 @@ public class MaxNumberCountInArray {
                 if (count > max_count) {
                     max_count = count;
                     maxFreqNumber = array[i];
-                }
-
-                if(max_count < 2){
-                    maxFreqNumber = -1;
                 }
             }
         }
