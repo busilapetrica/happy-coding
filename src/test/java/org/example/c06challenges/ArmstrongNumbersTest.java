@@ -7,13 +7,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class ArmstrongNumbersTest {
     @Test
     void returnTrueIfNumberIsArmstrongNumber() {
-        int number = 1;
+        int number = 4;
         Boolean result = ArmstrongNumbers.checkArmstrongNumber(number);
         assertEquals(true, result);
     }
     @Test
     void returnFalseIfNumberIsArmstrongNumber() {
-        int number = 10;
+        int number = 11;
         Boolean result = ArmstrongNumbers.checkArmstrongNumber(number);
         assertEquals(false, result);
     }
