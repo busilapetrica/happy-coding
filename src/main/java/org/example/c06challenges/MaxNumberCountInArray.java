@@ -1,5 +1,10 @@
 package org.example.c06challenges;
 
+/**************************************
+ Find majority element of an array
+ The given array is :  1, 7, 3, 7, 4, 3, 7, 3, 7
+ The majority of the Element : 7
+ ****************************************/
 public class MaxNumberCountInArray {
     private MaxNumberCountInArray() {
     }
