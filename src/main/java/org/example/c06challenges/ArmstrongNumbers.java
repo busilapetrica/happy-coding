@@ -22,13 +22,26 @@ public class ArmstrongNumbers {
             lengthNumber++;
         }
 
-        while (originalNumber != 0) {
-            remainder = originalNumber % 10;
+        if(number == 0){
+           return result != number;
+        }
 
-            for (int i = 0; i < lengthNumber; i ++){
-                result += remainder;
+        if(lengthNumber == 1){
+            result = number;
+        }else {
+
+            while (originalNumber != 0) {
+                remainder = originalNumber % 10;
+
+                int tempResult = 1;
+                for (int i = 0; i < lengthNumber; i++) {
+                    tempResult *= remainder;
+                }
+                result += tempResult;
+
+                originalNumber /= 10;
+
             }
-            originalNumber /= 10;
         }
         return result == number;
     }
