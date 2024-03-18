@@ -13,14 +13,14 @@ class MaxNumberCountInArrayTest {
     }
 
     @Test
-    void returnMinus1IfInArrayAreNotRepeatedElements() {
+    void returnZeroIfInArrayAreNotRepeatedElements() {
         int[] array = {1, 2};
         int result = MaxNumberCountInArray.majorityElementOfArray(array);
         assertEquals(0, result);
     }
 
     @Test
-    void returnMinus2IfArrayIsEmpty() {
+    void returnZeroIfArrayIsEmpty() {
         int[] array = {};
         int result = MaxNumberCountInArray.majorityElementOfArray(array);
         assertEquals(0, result);
